@@ -9,7 +9,7 @@ export default function JourneyWithHarmony() {
                         Feel the Journey with <span className="text-[#33C9D2]">Harmony</span>
                     </h1>
                     <p className="text-base md:text-lg">
-                        "Feel the Journey with Harmony" invites you to embark on a transformative path toward mental well-being. 
+                        &quot;Feel the Journey with Harmony&quot; invites you to embark on a transformative path toward mental well-being. 
                         Our platform combines expert guidance with personalized tools, allowing you to explore your emotions, 
                         track your progress, and connect with licensed therapists. Embrace the journey of healing and 
                         self-discovery, where every step brings you closer to a harmonious state of mind.
