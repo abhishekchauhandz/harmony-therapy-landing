@@ -4,9 +4,11 @@ import Link from "next/link";
 import { MdPersonAddAlt1 } from "react-icons/md";
 import { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const pathname = usePathname();
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -30,6 +32,10 @@ export default function Header() {
         };
     }, [menuOpen]);
 
+    const isActiveLink = (path) => {
+        return pathname === path ? 'text-[#FFA05D]' : 'text-[#777777]';  // Apply active color
+    };
+
     return (
         <>
             <header className="flex justify-center relative">
@@ -39,11 +45,11 @@ export default function Header() {
                             <Image src='/logo.png' width={140} height={60} alt="Logo" />
                         </div>
                         <div className="hidden md:flex text-[#777777] gap-10 text-base md:text-lg">
-                            <Link href="/">Home</Link>
-                            <Link href="#">We deal in</Link>
-                            <Link href="/about-us">About us</Link>
-                            <Link href="#">Blogs</Link>
-                            <Link href="#">Events and Articles</Link>
+                            <Link href="/" className={`${isActiveLink("/")}`}>Home</Link>
+                            <Link href="#" className={`${isActiveLink("#")}`}>We deal in</Link>
+                            <Link href="/about-us" className={`${isActiveLink("/about-us")}`}>About us</Link>
+                            <Link href="#" className={`${isActiveLink("#")}`}>Blogs</Link>
+                            <Link href="#" className={`${isActiveLink("#")}`}>Events and Articles</Link>
                         </div>
                         <button className="flex items-center px-4 py-2 text-white font-bold text-sm md:text-base bg-[#33C9D2] rounded-[10px]">
                             Get Free Session <MdPersonAddAlt1 className="ml-2 text-base md:text-lg" />
@@ -67,9 +73,9 @@ export default function Header() {
                             Get Free Session <MdPersonAddAlt1 className="ml-2 text-base" />
                         </button>
 
-                        <Link href="#" className="py-2 text-[#777777]" onClick={closeMenu}>Home</Link>
+                        <Link href="/" className={`${isActiveLink("/")} py-2`} onClick={closeMenu}>Home</Link>
                         <Link href="#" className="py-2 text-[#777777]" onClick={closeMenu}>We deal in</Link>
-                        <Link href="/about-us" className="py-2 text-[#777777]" >About us</Link>
+                        <Link href="/about-us" className={`${isActiveLink("#")} py-2`} >About us</Link>
                         <Link href="#" className="py-2 text-[#777777]" onClick={closeMenu}>Blogs</Link>
                         <Link href="#" className="py-2 text-[#777777]" onClick={closeMenu}>Events and Articles</Link>
                     </div>
