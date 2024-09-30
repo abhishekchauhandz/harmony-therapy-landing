@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
                         <ul className="list-disc list-inside text-gray-700">
                             <li><strong>Personal Identification Information</strong>: Name, email address, phone number, and other contact details.</li>
                             <li><strong>Appointment Information</strong>: Details related to medical appointments, consultations, and health records.</li>
-                            <li><strong>Children's Information</strong>: Personal information of patients under 18 years old, with consent from parents/guardians.</li>
+                            <li><strong>Children&apos&apos;s Information</strong>: Personal information of patients under 18 years old, with consent from parents/guardians.</li>
                         </ul>
                     </section>
 
@@ -65,7 +65,7 @@ export default function PrivacyPolicy() {
                     </section>
 
                     <section className="mb-8">
-                        <h2 className="text-2xl font-bold mb-4">Children's Privacy</h2>
+                        <h2 className="text-2xl font-bold mb-4">Children&apos;s Privacy</h2>
                         <p className="text-gray-700">Our services are available to users of all ages, including children under 18, with the consent of their parents or guardians. We ensure that data related to minors is handled with care.</p>
                     </section>
 
