@@ -16,7 +16,7 @@ export default function Footer() {
                             <h1 className="text-2xl md:text-3xl font-bold">Stay in the loop</h1>
                             <p className="text-base font-medium">Be the first to get updates on our latest content, special offers, and new features.</p>
                             <p className="text-sm">
-                                By signing up, you're agreeing to receive marketing emails from Headspace. You can unsubscribe at any time. For more details, check out our <Link href='/privacy-policy' className="underline">Privacy Policy</Link>.
+                                By signing up, you&apos;re agreeing to receive marketing emails from Headspace. You can unsubscribe at any time. For more details, check out our <Link href='/privacy-policy' className="underline">Privacy Policy</Link>.
                             </p>
                         </div>
 
