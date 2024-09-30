@@ -36,3 +36,23 @@ body {
   height: 90px;
   border-radius: 25px;
 }
+
+.slide-enter {
+  transform: translateX(100%); /* Start from the right */
+  transition: transform 0.5s ease-in-out; /* Transition effect */
+}
+
+.slide-enter-active {
+  transform: translateX(0); /* Slide to the original position */
+}
+
+.slide-exit {
+  transform: translateX(0); /* Start from the original position */
+  transition: transform 0.5s ease-in-out; /* Transition effect */
+}
+
+.slide-exit-active {
+  transform: translateX(-100%); /* Slide out to the left */
+}
+
+

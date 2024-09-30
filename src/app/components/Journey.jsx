@@ -4,7 +4,7 @@ export default function JourneyWithHarmony() {
     return (
         <>
             <div className="flex justify-center py-20 px-4">
-                <div className="w-full h-auto bg-white rounded-[25px] text-center p-5 flex flex-col gap-5"> {/* Added max-w-3xl for responsiveness */}
+                <div className="w-full h-auto bg-white rounded-[25px] text-center p-5 flex flex-col gap-5"> 
                     <h1 className="text-3xl md:text-5xl font-bold font-montserrat"> 
                         Feel the Journey with <span className="text-[#33C9D2]">Harmony</span>
                     </h1>

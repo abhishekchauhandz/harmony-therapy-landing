@@ -16,7 +16,6 @@ export default function Header() {
         setMenuOpen(false);
     };
 
-    // Close the mobile menu when clicking outside
     const handleClickOutside = (event) => {
         const menu = document.getElementById('mobile-menu');
         if (menu && !menu.contains(event.target) && menuOpen) {
