@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import TestimonialCard from "@/components/Testimonials";
+import TestimonialCard from '../../../src/components/Testimonials'
 
 
 export default function Service() {
