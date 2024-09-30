@@ -39,7 +39,7 @@ export default function Header() {
                             <Image src='/logo.png' width={140} height={60} alt="Logo" />
                         </div>
                         <div className="hidden md:flex text-[#777777] gap-10 text-base md:text-lg">
-                            <Link href="#">Home</Link>
+                            <Link href="/">Home</Link>
                             <Link href="#">We deal in</Link>
                             <Link href="/about-us">About us</Link>
                             <Link href="#">Blogs</Link>
