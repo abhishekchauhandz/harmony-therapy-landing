@@ -43,12 +43,12 @@ export default function Hero() {
 
                 {currentSlide === 0 && (
                     <div className="w-full md:w-[640px] relative flex justify-center items-center">
-                        <div className="w-[608px] h-[336px] bg-white rounded-3xl relative flex items-center justify-center">
+                        <div className="w-[608px] h-[336px] bg-white rounded-3xl relative flex items-center justify-center mt-10">
                             <Image
                                 src="/hero.png"
                                 width={444}
                                 height={433}
-                                className="object-contain md:absolute md:bottom-0"
+                                className="object-contain md:absolute md:bottom-0 absolute bottom-0"
                                 alt="Hero Image"
                             />
                         </div>
@@ -58,12 +58,12 @@ export default function Hero() {
                
                 {currentSlide === 1 && (
                     <div className="w-full md:w-full relative flex justify-center items-center">
-                        <div className="w-[608px] h-[336px] bg-white rounded-3xl relative flex items-center justify-center">
+                        <div className="w-[608px] h-[336px] bg-white rounded-3xl relative flex items-center justify-center mt-10">
                             <Image
                                 src="/hero.png"
                                 width={444}
                                 height={433}
-                                className="object-contain md:absolute md:bottom-0"
+                                className="object-contain md:absolute md:bottom-0 absolute bottom-0"
                                 alt="Hero Image"
                             />
                         </div>
@@ -84,12 +84,12 @@ export default function Hero() {
 
                 {currentSlide === 2 && (
                     <div className="w-full md:w-[640px] relative flex justify-center items-center">
-                        <div className="w-[608px] h-[336px] bg-white rounded-3xl relative flex items-center justify-center">
+                        <div className="w-[608px] h-[336px] bg-white rounded-3xl relative flex items-center justify-center mt-10">
                             <Image
                                 src="/hero.png"
                                 width={444}
                                 height={433}
-                                className="object-contain md:absolute md:bottom-0"
+                                className="object-contain md:absolute md:bottom-0 absolute bottom-0"
                                 alt="Hero Image"
                             />
                         </div>
