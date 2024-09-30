@@ -41,7 +41,7 @@ export default function Header() {
                         <div className="hidden md:flex text-[#777777] gap-10 text-base md:text-lg">
                             <Link href="#">Home</Link>
                             <Link href="#">We deal in</Link>
-                            <Link href="#">About us</Link>
+                            <Link href="/about-us">About us</Link>
                             <Link href="#">Blogs</Link>
                             <Link href="#">Events and Articles</Link>
                         </div>
@@ -69,7 +69,7 @@ export default function Header() {
 
                         <Link href="#" className="py-2 text-[#777777]" onClick={closeMenu}>Home</Link>
                         <Link href="#" className="py-2 text-[#777777]" onClick={closeMenu}>We deal in</Link>
-                        <Link href="#" className="py-2 text-[#777777]" onClick={closeMenu}>About us</Link>
+                        <Link href="/about-us" className="py-2 text-[#777777]" >About us</Link>
                         <Link href="#" className="py-2 text-[#777777]" onClick={closeMenu}>Blogs</Link>
                         <Link href="#" className="py-2 text-[#777777]" onClick={closeMenu}>Events and Articles</Link>
                     </div>

@@ -1,5 +1,7 @@
 import { Montserrat, Poppins } from 'next/font/google';
 import "./globals.css";
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 const poppins = Poppins({
   weight: ['400', '600'],
@@ -22,7 +24,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.variable} ${montserrat.variable}`}
       >
+        <div className="w-full px-4 md:px-20">
+          <Header />
+        </div>
         {children}
+        <Footer />
       </body>
     </html>
   );
