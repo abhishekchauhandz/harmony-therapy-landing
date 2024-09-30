@@ -75,7 +75,7 @@ export default function Header() {
 
                         <Link href="/" className={`${isActiveLink("/")} py-2`} onClick={closeMenu}>Home</Link>
                         <Link href="#" className="py-2 text-[#777777]" onClick={closeMenu}>We deal in</Link>
-                        <Link href="/about-us" className={`${isActiveLink("#")} py-2`} >About us</Link>
+                        <Link href="/about-us" className={`${isActiveLink("/about-us")} py-2`} onClick={closeMenu}>About us</Link>
                         <Link href="#" className="py-2 text-[#777777]" onClick={closeMenu}>Blogs</Link>
                         <Link href="#" className="py-2 text-[#777777]" onClick={closeMenu}>Events and Articles</Link>
                     </div>
