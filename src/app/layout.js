@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: "Harmony Therapy",
-  description: "Your trusted Mental Health Care/support",
+  description: "Your trusted Mental Health Care/support",  // iski ma
 };
 
 export default function RootLayout({ children }) {
