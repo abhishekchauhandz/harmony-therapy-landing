@@ -8,14 +8,14 @@ export default function Hero() {
 
     // useEffect(() => {
     //     const interval = setInterval(() => {
-    //         setCurrentSlide((prev) => (prev + 1) % 3); // Change 3 to the total number of slides
+    //         setCurrentSlide((prev) => (prev + 1) % 3);
     //     }, 5000); // Change slide every 5 seconds
 
-    //     return () => clearInterval(interval); // Cleanup interval on unmount
+    //     return () => clearInterval(interval); 
     // }, []);
 
     const nextSlide = () => {
-        setCurrentSlide((prev) => (prev + 1) % 3); // Use 3 as the total number of slides
+        setCurrentSlide((prev) => (prev + 1) % 3); 
     };
 
 
@@ -25,7 +25,7 @@ export default function Hero() {
 
         
                 {currentSlide === 0 && (
-                    <div className="text-center md:text-left md:py-0 py-5">
+                    <div className="text-center md:text-left md:py-0 py-5" data-aos="fade-right">
                         <div className="w-full md:w-[469px]">
                             <span className="text-3xl md:text-5xl font-bold text-[#33C9D2]">Good Balance</span>
                             <div>
@@ -42,7 +42,7 @@ export default function Hero() {
                 )}
 
                 {currentSlide === 0 && (
-                    <div className="w-full md:w-[640px] relative flex justify-center items-center md:py-0 py-10">
+                    <div className="w-full md:w-[640px] relative flex justify-center items-center md:py-0 py-10" data-aos="fade-left">
                         <div className="w-[608px] h-[336px] bg-white rounded-3xl relative flex items-center justify-center">
                             <Image
                                 src="/hero.png"
@@ -57,7 +57,7 @@ export default function Hero() {
 
                
                 {currentSlide === 1 && (
-                    <div className="w-full md:w-full relative flex justify-center items-center md:py-0 py-10">
+                    <div className="w-full md:w-full relative flex justify-center items-center md:py-0 py-10" data-aos="zoom-in">
                         <div className="w-[608px] h-[336px] bg-white rounded-3xl relative flex items-center justify-center">
                             <Image
                                 src="/hero.png"
@@ -72,7 +72,7 @@ export default function Hero() {
 
                 
                 {currentSlide === 2 && (
-                    <div className="text-center md:text-left md:py-0 py-5">
+                    <div className="text-center md:text-left md:py-0 py-5" data-aos="fade-right">
                         <div className="w-full md:w-[469px]">
                             <span className="text-3xl md:text-5xl font-bold text-[#33C9D2]">A Third Slide Title</span>
                         </div>
@@ -83,7 +83,7 @@ export default function Hero() {
                 )}
 
                 {currentSlide === 2 && (
-                    <div className="w-full md:w-[640px] relative flex justify-center items-center md:py-0 py-10">
+                    <div className="w-full md:w-[640px] relative flex justify-center items-center md:py-0 py-10" data-aos="fade-left">
                         <div className="w-[608px] h-[336px] bg-white rounded-3xl relative flex items-center justify-center">
                             <Image
                                 src="/hero.png"

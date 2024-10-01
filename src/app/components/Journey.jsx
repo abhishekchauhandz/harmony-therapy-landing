@@ -14,7 +14,7 @@ export default function JourneyWithHarmony() {
                         track your progress, and connect with licensed therapists. Embrace the journey of healing and 
                         self-discovery, where every step brings you closer to a harmonious state of mind.
                     </p>
-                    <div className="flex items-center justify-center">
+                    <div className="flex items-center justify-center" data-aos="zoom-in">
                         <Image 
                             src='/journey.png' 
                             width={501} 
