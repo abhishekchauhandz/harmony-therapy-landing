@@ -4,7 +4,7 @@ export default function AboutUs() {
     return (
         <div className="w-full px-5 md:px-20">
 
-            <div className="flex flex-col md:flex-row items-center mb-16 pt-32 md:pt-32">
+            <div className="flex flex-col md:flex-row items-center mb-16 pt-32 md:pt-32" data-aos="fade-up">
                 <div className="w-full md:w-1/2 mb-8 md:mb-0">
                     <Image src="/hero.png" width={500} height={380} alt="About Harmony" />
                 </div>
@@ -21,7 +21,7 @@ export default function AboutUs() {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row-reverse items-center mb-16">
+            <div className="flex flex-col md:flex-row-reverse items-center mb-16" data-aos="fade-left">
                 <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-end">
                     <Image src="/hero.png" width={500} height={380} alt="our mission" />
                 </div>
@@ -36,7 +36,7 @@ export default function AboutUs() {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center mb-16">
+            <div className="flex flex-col md:flex-row items-center mb-16" data-aos="fade-right">
                 <div className="w-full md:w-1/2 mb-8 md:mb-0">
                     <Image src="/hero.png" width={500} height={380} alt="our vision" />
                 </div>
@@ -51,7 +51,7 @@ export default function AboutUs() {
                 </div>
             </div>
 
-            <div className="flex flex-col-reverse md:flex items-center mb-16">
+            <div className="flex flex-col-reverse md:flex items-center mb-16" data-aos="fade-up">
                 {/* <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-end">
                     <Image src="/modal.png" width={400} height={400} alt="Why Choose Us" />
                 </div> */}

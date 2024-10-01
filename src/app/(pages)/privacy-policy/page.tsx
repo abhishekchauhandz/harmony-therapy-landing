@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function PrivacyPolicy() {
     return (
-        <div className="w-full px-5 md:px-20">
+        <div className="w-full px-0 md:px-20">
             <div className="px-4 sm:px-6 lg:px-8 pt-32">
             <h1 className="text-4xl font-bold text-center mt-5 text-[#33C9D2]">Privacy Policy</h1>
-                <div className="p-6 lg:p-12">
+                <div className="p-2 lg:p-12" data-aos="fade-right">
                     <p className="text-sm text-gray-600 mb-6">Effective Date: [Date]</p>
                     
                     <section className="mb-8">
