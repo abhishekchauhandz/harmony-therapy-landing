@@ -38,22 +38,27 @@ body {
   z-index: 9999;
 }
 
-.slide-enter {
-  transform: translateX(100%); /* Start from the right */
-  transition: transform 0.5s ease-in-out; /* Transition effect */
+/* globals.css */
+
+.testimonial-slide-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.testimonial-slide-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.slide-enter-active {
-  transform: translateX(0); /* Slide to the original position */
+.testimonial-slide-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+.testimonial-slide-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.slide-exit {
-  transform: translateX(0); /* Start from the original position */
-  transition: transform 0.5s ease-in-out; /* Transition effect */
-}
-
-.slide-exit-active {
-  transform: translateX(-100%); /* Slide out to the left */
-}
 
 

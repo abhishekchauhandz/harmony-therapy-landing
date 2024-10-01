@@ -22,17 +22,17 @@ export default function Service() {
             rating: 5,
         },
         {
-            name: "Shubham Solanki",
+            name: "Shivam Solanki",
             review: "I am so happy to join Harmony therapy for my Personal Mental Health issues. The doctor was awesome, even I did not spend that much in my therapy and still got the best treatments from them. Thanks to Harmony Therapy.",
             rating: 5,
         },
         {
-            name: "Aman Gupta",
+            name: "Chaman Gupta",
             review: "Harmony Therapy has been a blessing for my mental health journey. The platform offers personalized tools that helped me overcome my anxiety and build a positive outlook.",
             rating: 4,
         },
         {
-            name: "Neha Sharma",
+            name: "Nehal Sharma",
             review: "Great experience overall! The therapists are very supportive, and the platform is easy to use. I recommend Harmony Therapy to anyone struggling with mental health.",
             rating: 5,
         },
@@ -40,6 +40,14 @@ export default function Service() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [windowWidth, setWindowWidth] = useState(768); 
+
+    useEffect(() => {
+        const slideInterval = setInterval(() => {
+            nextTestimonials();
+        }, 5000); 
+
+        return () => clearInterval(slideInterval);
+    }, [currentIndex]);
 
     useEffect(() => {
         const handleResize = () => {
@@ -60,19 +68,17 @@ export default function Service() {
     }, []);
 
     const nextTestimonials = () => {
-        if (currentIndex + 3 < testimonials.length) {
-            setCurrentIndex(currentIndex + 1);
-        }
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
     };
 
     const prevTestimonials = () => {
-        if (currentIndex > 0) {
-            setCurrentIndex(currentIndex - 1);
-        }
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
     };
 
     const testimonialsToShowCount = windowWidth < 768 ? 1 : 3;
-    const testimonialsToShow = testimonials.slice(currentIndex, currentIndex + testimonialsToShowCount);
+    const testimonialsToShow = Array.from({ length: testimonialsToShowCount }, (_, i) => {
+        return testimonials[(currentIndex + i) % testimonials.length];
+    });
 
 
     return (
