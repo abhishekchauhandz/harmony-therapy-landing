@@ -33,13 +33,17 @@ export default function Footer() {
 
 
 
-                    <div className="flex flex-col md:flex-row">
+                    <div className="flex flex-col md:flex-row justify-between">
+                        <div className="flex justify-center items-center mb-8 md:mb-0">
+                            <Image src='/logo.png' width={200} height={200} alt="Logo" />
+                        </div>
+                        {/* <div className="flex flex-wrap justify-evenly w-full gap-8 md:gap-6">
 
-                        <div className="flex flex-wrap justify-between w-full md:w-[60%] gap-8 md:gap-6">
-                            <div className="flex justify-center items-center mb-8 md:mb-0">
-                                <Image src='/logo.png' width={200} height={200} alt="Logo" />
-                            </div>
 
+                           
+                            
+                        </div> */}
+                        <div className="flex justify-around md:flex gap-20">
                             <div className="flex flex-col">
                                 <h1 className="text-lg md:text-xl font-bold">Important Links</h1>
                                 <ul className="mt-5 text-sm">
@@ -66,15 +70,13 @@ export default function Footer() {
                                 </ul>
                             </div>
                         </div>
-
-
-                        <div className="flex flex-wrap justify-between w-full md:w-[40%] gap-8 md:gap-0">
-                            <div className="flex flex-col items-center md:items-start ml-0 md:ml-28 md:mt-0 mt-5">
+                        <div className="flex gap-10 justify-around">
+                            <div className="flex flex-col items-center md:items-start ml-0 md:mt-0 mt-5">
                                 <h1 className="text-lg md:text-xl font-bold">My Headspace</h1>
                                 <button className="px-3 mt-5 py-2 bg-[#111111] rounded-3xl text-white text-base">Login</button>
                             </div>
 
-                            <div className="flex flex-col items-center md:items-start md:mt-0 mt-5">
+                            <div className="flex flex-col items-center md:items-start ml-0 md:mt-0 mt-5">
                                 <h1 className="text-lg md:text-xl font-bold">Get the app</h1>
                                 <div className="mt-5">
                                     <Image src="/playstore.png" width={120} height={40} alt="Playstore" />
@@ -84,6 +86,11 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
+
+
+                        {/* <div className="flex flex-wrap justify-between w-full md:w-[40%] gap-8 md:gap-0">
+                            
+                        </div> */}
                     </div>
                 </div>
             </footer>
