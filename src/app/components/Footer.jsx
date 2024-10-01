@@ -6,8 +6,8 @@ export default function Footer() {
         <>
             <footer className="w-full h-auto bg-[#f9f4f2]">
                 <div className="px-4 md:px-10 lg:px-36 py-10 flex flex-col justify-evenly gap-10">
-                   
-                    <div className="flex flex-col md:flex-row md:justify-between md:gap-6">
+
+                    {/* <div className="flex flex-col md:flex-row md:justify-between md:gap-6">
                         <div className="flex justify-center items-center mb-8 md:mb-0">
                             <Image src='/logo.png' width={150} height={150} alt="Logo" />
                         </div>
@@ -29,30 +29,19 @@ export default function Footer() {
                                 <button className="px-5 py-2 bg-[#111111] rounded-3xl text-white text-lg md:text-xl">Subscribe</button>
                             </form>
                         </div>
-                    </div>
+                    </div> */}
 
-                    <hr />
 
-                    
+
                     <div className="flex flex-col md:flex-row">
-                        
+
                         <div className="flex flex-wrap justify-between w-full md:w-[60%] gap-8 md:gap-6">
-                            <div className="flex flex-col">
-                                <h1 className="text-lg md:text-xl font-bold">Get some Headspace</h1>
-                                <ul className="mt-5 text-sm">
-                                    <li>Send a gift</li>
-                                    <li>Redeem a code</li>
-                                    <li>Student Plan</li>
-                                    <li>All articles</li>
-                                    <li>Subscribe</li>
-                                    <li>Headspace for Work</li>
-                                    <li>Admin portal login</li>
-                                    <li>Explore our content library</li>
-                                </ul>
+                            <div className="flex justify-center items-center mb-8 md:mb-0">
+                                <Image src='/logo.png' width={200} height={200} alt="Logo" />
                             </div>
 
                             <div className="flex flex-col">
-                                <h1 className="text-lg md:text-xl font-bold">About Us</h1>
+                                <h1 className="text-lg md:text-xl font-bold">Important Links</h1>
                                 <ul className="mt-5 text-sm">
                                     <li>About Headspace</li>
                                     <li>Leadership</li>
@@ -65,7 +54,7 @@ export default function Footer() {
                             </div>
 
                             <div className="flex flex-col">
-                                <h1 className="text-lg md:text-xl font-bold">Support</h1>
+                                <h1 className="text-lg md:text-xl font-bold">Quick Links</h1>
                                 <ul className="mt-5 text-sm">
                                     <li>Help</li>
                                     <li>Contact Us</li>
@@ -73,11 +62,12 @@ export default function Footer() {
                                     <li>Accessibility</li>
                                     <li>Security</li>
                                     <li>Cookie policy</li>
+                                    <li><Link href='/privacy-policy' className="underline">Privacy Policy</Link></li>
                                 </ul>
                             </div>
                         </div>
 
-                        
+
                         <div className="flex flex-wrap justify-between w-full md:w-[40%] gap-8 md:gap-0">
                             <div className="flex flex-col items-center md:items-start ml-0 md:ml-28 md:mt-0 mt-5">
                                 <h1 className="text-lg md:text-xl font-bold">My Headspace</h1>

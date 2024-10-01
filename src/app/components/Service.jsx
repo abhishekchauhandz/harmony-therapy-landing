@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback  } from "react";
 import TestimonialCard from '../../../src/components/Testimonials'
 
 
@@ -67,9 +67,9 @@ export default function Service() {
         };
     }, []);
 
-    const nextTestimonials = () => {
+    const nextTestimonials = useCallback(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    };
+    }, [testimonials.length]);
 
     const prevTestimonials = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
