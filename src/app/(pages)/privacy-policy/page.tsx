@@ -6,7 +6,6 @@ export default function PrivacyPolicy() {
             <div className="px-4 sm:px-6 lg:px-8 pt-32">
             <h1 className="text-4xl font-bold text-center mt-5 text-[#33C9D2]">Privacy Policy</h1>
                 <div className="p-2 lg:p-12" data-aos="fade-right">
-                    <p className="text-sm text-gray-600 mb-6">Effective Date: [Date]</p>
                     
                     <section className="mb-8">
                         <h2 className="text-2xl font-bold mb-4">Introduction</h2>

@@ -1,6 +1,33 @@
+'use client'
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function CertifiedConsultant() {
+    const [consultants, setConsultants] = useState([]);
+    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+
+    if (!apiKey) {
+        throw new Error('API key is missing.');
+    }
+
+    useEffect(() => {
+        const fetchConsultants = async () => {
+            try {
+                const response = await fetch('https://harmony-backend-z69j.onrender.com/api/get/all/category', {
+                    method: "GET",
+                    headers: { 'x-api-key': apiKey }
+                });
+                const data = await response.json();
+                console.log("data", data)
+                setConsultants(data?.msg?.allCategory);
+            } catch (error) {
+                console.error('Error fetching consultants data:', error);
+            }
+        };
+
+        fetchConsultants();
+    }, []);
+
     return (
         <>
             <div className="py-20">
@@ -22,15 +49,25 @@ export default function CertifiedConsultant() {
                             </svg>
                         </button>
                     </div>
-                    <div className="flex flex-wrap justify-evenly py-2">
-                        {[...Array(6)].map((_, index) => (
-                            <div key={index} className="w-full max-w-[387px] h-[82px] flex justify-between mb-2">
-                                <Image src='/consultants/icon1.png' alt="icon" width={87} height={82} />
-                                <Image src='/consultants/icon2.png' alt="icon" width={95} height={82} />
-                                <Image src='/consultants/icon3.png' alt="icon" width={70} height={82} />
-                                <Image src='/consultants/icon4.png' alt="icon" width={81} height={82} />
-                            </div>
-                        ))}
+                    <div className="flex flex-wrap gap-10 px-5 pb-4">
+                        {consultants.length > 0 ? (
+                            consultants.map((consultant, index) => (
+                                <div key={index} className="flex flex-col items-center mb-2">
+                                    <div className="rounded-full">
+                                        <Image
+                                           src={'/category.png'}  // {consultant.imagePath.startsWith('/') ? consultant.imagePath : `/${consultant.imagePath}`} 
+                                            alt={consultant.name}
+                                            width={80}
+                                            height={80}
+
+                                        />
+                                    </div>
+                                    <p className="text-center text-sm mt-1">{consultant.name}</p>
+                                </div>
+                            ))
+                        ) : (
+                            <p>Loading consultants...</p>
+                        )}
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import Service from "./components/Service";
 import CertifiedConsultant from "./components/CertifiedConsultant";
 import Features from "./components/Features";
 import VideoSection from './components/VideoSection'
-import BlogsAndArticle from './components/BlogsAndArticle'
+import Blogs from './components/Blogs'
 import CostSection from './components/CostSection'
 import AOSWrapper from '../../src/components/AOSWrapper'
 
@@ -21,7 +21,7 @@ export default function Home() {
           <CertifiedConsultant />
           <Features />
           <VideoSection />
-          <BlogsAndArticle />
+          <Blogs />
           <CostSection />
         </AOSWrapper>
       </main>
