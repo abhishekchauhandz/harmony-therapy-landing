@@ -8,7 +8,9 @@ export default function Features() {
                 <div className="flex flex-col md:flex-row justify-center md:justify-around items-center md:py-0 mt-10 md:mt-0 space-y-10 md:space-y-0" data-aos="fade-right">
                     <div className="relative flex-shrink-0 md:pt-10 pt-20 md:mt-0 mt-10">
                         <Image src='/image-bg.png' width={480} height={480} />
-                        <Image src='/modal.png' width={320} height={412} className="absolute md:absolute md:left-20 left-10 bottom-20" />
+                        <div className="absolute md:absolute md:left-20 left-10 md:bottom-20 bottom-16 md:w-[320px] md:h-[412px] w-[300px] h-[300]">
+                            <Image src='/modal.png' width={320} height={412} />
+                        </div>
                     </div>
                     <div className="w-full md:w-1/2" data-aos="fade-left">
                         <h1 className="font-bold text-3xl md:text-5xl font-montserrat">Mood Journal & Tracker 😊</h1>
@@ -22,14 +24,18 @@ export default function Features() {
                     </div>
                     <div className="relative flex-shrink-0 pb-10" data-aos="fade-left">
                         <Image src='/image-bg.png' width={480} height={480} />
-                        <Image src='/modal1.png' width={616} height={411} className="absolute md:absolute md:right-30 right-30 top-10" />
+                        <div className="absolute md:absolute md:-left-20 -left-20 -top-5 md:bottom-20 md:w-[616px] md:h-[411px] w-[500px] h-[300]">
+                            <Image src='/modal1.png' width={616} height={411} />
+                        </div>
                     </div>
 
                 </div>
                 <div className="flex flex-col md:flex-row justify-center md:justify-around items-center md:py-0 py-10 space-y-10 md:space-y-0" data-aos="fade-right">
                     <div className="relative flex-shrink-0 md:pt-0 pt-20 md:mt-0 mt-20" data-aos="zoom-in">
                         <Image src='/image-bg.png' width={480} height={480} />
-                        <Image src='/modal2.png' width={397} height={514} className="absolute md:absolute md:right-20 right-10 bottom-20" />
+                        <div className="absolute md:absolute md:right-20 right-10 md:bottom-20 bottom-16 md:w-[397px] md:h-[514px] w-[350px] h-[300]">
+                            <Image src='/modal2.png' width={397} height={514} />
+                        </div>
                     </div>
                     <div className="w-full md:w-1/2" data-aos="fade-up">
                         <h1 className="font-bold text-3xl md:text-5xl font-montserrat">Access to All <span className="text-[#33C9D2]">Personalized Resources</span></h1>
@@ -43,7 +49,9 @@ export default function Features() {
                     </div>
                     <div className="relative flex-shrink-0 pb-10" data-aos="fade-left">
                         <Image src='/image-bg.png' width={480} height={480} />
-                        <Image src='/modal3.png' width={514} height={412} className="absolute md:absolute md:right-25 left-0 top-0" />
+                        <div className="absolute md:absolute md:right-25 left-0 top-0">
+                            <Image src='/modal3.png' width={514} height={412} />
+                        </div>
                     </div>
 
                 </div>
