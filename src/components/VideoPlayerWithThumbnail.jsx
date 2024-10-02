@@ -1,5 +1,5 @@
-'use client'
-import { useState } from 'react';
+'use client';
+import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 
@@ -7,9 +7,29 @@ const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 
 const VideoPlayerWithThumbnail = ({ url, thumbnailUrl }) => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); 
+
+    window.addEventListener('resize', handleResize); 
+
+    return () => window.removeEventListener('resize', handleResize); 
+  }, []);
 
   const handlePlayClick = () => {
-    setIsPlaying(true);
+    if (isMobile) {
+     
+      window.location.href = url;
+    } else {
+     
+      setIsPlaying(true);
+    }
   };
 
   const handleBackClick = () => {

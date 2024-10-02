@@ -11,7 +11,7 @@ import AOSWrapper from '../../src/components/AOSWrapper'
 export default function Home() {
   return (
     <>
-      <main className="w-full px-4 md:px-20">
+      <main className="w-full px-4 md:px-20 overflow-x-hidden">
 
 
         <AOSWrapper>

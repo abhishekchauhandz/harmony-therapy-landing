@@ -111,7 +111,7 @@ export default function Hero() {
                         />
                     </svg>
                 </div>
-                <div onClick={nextSlide} className="absolute md:absolute md:left-0 md:transform md:-translate-x-12 left-0 top-1/2 transform translate-x-1/4 -translate-y-1/2 cursor-pointer">
+                <div onClick={nextSlide} className="absolute md:absolute md:left-0 md:transform md:-translate-x-12 left-0 top-1/2 transform -translate-x-4 -translate-y-1/2 cursor-pointer">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="60"
