@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Features() {
     return (
         <>
-            <div className="md:p-0 p-4">
+            <div className="md:p-0 p-4" id="features">
                 <h1 className="font-bold text-4xl md:text-5xl text-center" data-aos="fade-up">Costs <span className="text-[#33C9D2]">0</span> at <span className="text-[#33C9D2]">Harmony Therapy</span></h1>
                 <div className="flex flex-col md:flex-row justify-center md:justify-around items-center md:py-0 mt-10 md:mt-0 space-y-10 md:space-y-0" data-aos="fade-right">
                     <div className="relative flex-shrink-0 md:pt-10 pt-20 md:mt-0 mt-10">

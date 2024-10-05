@@ -21,7 +21,9 @@ export default function Home() {
           <CertifiedConsultant />
           <Features />
           <VideoSection />
-          <Blogs />
+          <div id="blogs">
+            <Blogs />
+          </div>
           <CostSection />
         </AOSWrapper>
       </main>

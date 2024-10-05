@@ -35,7 +35,9 @@ export default function Footer() {
 
                     <div className="flex flex-col md:flex-row justify-between">
                         <div className="flex justify-center items-center mb-8 md:mb-0">
-                            <Image src='/logo.png' width={200} height={200} alt="Logo" />
+                            <Link href="#">
+                                <Image src='/logo.png' width={200} height={200} alt="Logo" />
+                            </Link>
                         </div>
                         {/* <div className="flex flex-wrap justify-evenly w-full gap-8 md:gap-6">
 
@@ -47,13 +49,11 @@ export default function Footer() {
                             <div className="flex flex-col">
                                 <h1 className="text-lg md:text-xl font-bold">Important Links</h1>
                                 <ul className="mt-5 text-sm">
-                                    <li>About Headspace</li>
-                                    <li>Leadership</li>
-                                    <li>Press</li>
-                                    <li>Careers</li>
-                                    <li>Partnership request</li>
-                                    <li>Sleep App</li>
-                                    <li>Sitemap</li>
+                                    <li><Link href="#features">Features</Link></li>
+                                    <li><Link href="#blogs">Blogs</Link></li>
+                                    <li><Link href="#categories">Categories</Link></li>
+                                    <li><Link href="#services">Services</Link></li>
+                                    <li><Link href="/about-us" className="underline">About us</Link></li>
                                 </ul>
                             </div>
 
@@ -79,11 +79,13 @@ export default function Footer() {
                             <div className="flex flex-col items-center md:items-start ml-0 md:mt-0 mt-5">
                                 <h1 className="text-lg md:text-xl font-bold">Get the app</h1>
                                 <div className="mt-5">
-                                    <Image src="/playstore.png" width={120} height={40} alt="Playstore" />
-                                </div>
+                                    <Link href="https://play.google.com/">
+                                        <Image src="/playstore.png" width={120} height={40} alt="Playstore" />
+                                    </Link>                                </div>
                                 <div className="mt-5">
-                                    <Image src="/applestore.png" width={120} height={40} alt="App Store" />
-                                </div>
+                                    <Link href="https://www.apple.com/in/app-store/">
+                                        <Image src="/applestore.png" width={120} height={40} alt="App Store" />
+                                    </Link>                                </div>
                             </div>
                         </div>
 

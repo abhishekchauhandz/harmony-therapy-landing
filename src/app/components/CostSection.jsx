@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CostSection() {
     return (
@@ -13,12 +14,12 @@ export default function CostSection() {
 
                         <p className="font-medium text-base md:text-xl mt-4 md:mb-16">Install the app, it&apos;s free. Get access to premium resources, for free. Talk with your therapist here.</p>
                         <div className="flex gap-5 md:pb-5 md:mt-0 mt-10">
-                            <div className="">
+                            <Link href="https://play.google.com/">
                                 <Image src="/playstore.png" width={120} height={40} alt="Playstore" />
-                            </div>
-                            <div className="">
+                            </Link>
+                            <Link href="https://www.apple.com/in/app-store/">
                                 <Image src="/applestore.png" width={120} height={40} alt="App Store" />
-                            </div>
+                            </Link>
                         </div>
                     </div>
                     <div className="absolute bottom-0 right-0 hidden md:block transform translate-x-10" data-aos="zoom-in">

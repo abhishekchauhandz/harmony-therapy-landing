@@ -53,18 +53,8 @@ body {
 
 .blogCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 15px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px rgba(117, 117, 117, 0.2), 0 15px 25px rgba(99, 98, 98, 0.1);
 }
 
-.each-blog {
-  background-color: #fff;
-  padding: 32px;
-  width: 70%;
-  border-radius: 12px;
-}
-
-.blog-status {
-  width: 25%;
-}
 
 

@@ -82,7 +82,7 @@ export default function Service() {
 
 
     return (
-        <div className="flex flex-col justify-center bg-transparent gap-10 px-4 pb-10">
+        <div className="flex flex-col justify-center bg-transparent gap-10 px-4 pb-10" id="services">
             <div className='w-full h-auto bg-transparent rounded-3xl text-center p-5 flex flex-col items-center gap-7'>
                 <h1 className="font-bold text-4xl md:text-5xl">
                     We are renowned for <span className="text-[#FFA05D]">what we serve</span>

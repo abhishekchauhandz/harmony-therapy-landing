@@ -6,6 +6,7 @@ import BlogCard from '../../components/BlogCard';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { truncateText } from '../../utils/textUtils';
+import Link from 'next/link';
 
 // Custom left arrow component
 const PrevArrow = ({ onClick }) => (
@@ -83,8 +84,8 @@ export default function BlogCarousel() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
-        prevArrow: <PrevArrow />,  
-        nextArrow: <NextArrow />,  
+        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow />,
         responsive: [
             {
                 breakpoint: 1024,
@@ -113,16 +114,18 @@ export default function BlogCarousel() {
                     <Slider {...settings}>
                         {topBlogs.map((blog, index) => (
                             <div key={index} className="carousel-slide">
-                                <BlogCard
-                                    image={blog.data.images[0] ? blog.data.images[0] : "/public/assests/avatar.jpg"}
-                                    heading={truncateText(
-                                        blog?.data?.headings?.h1?.[0] ||
-                                        blog?.data?.headings?.h2?.[0] ||
-                                        'No headings available',
-                                        15
-                                    )}
-                                    para={truncateText(blog?.data?.paragraphs?.join(' '), 100)}
-                                />
+                                <Link href={`/allBlogs/${blog.id}`}>
+                                    <BlogCard
+                                        image={blog.data.images[0] ? blog.data.images[0] : "/public/assests/avatar.jpg"}
+                                        heading={truncateText(
+                                            blog?.data?.headings?.h1?.[0] ||
+                                            blog?.data?.headings?.h2?.[0] ||
+                                            'No headings available',
+                                            15
+                                        )}
+                                        para={truncateText(blog?.data?.paragraphs?.join(' '), 100)}
+                                    />
+                                </Link>
                             </div>
                         ))}
                     </Slider>
