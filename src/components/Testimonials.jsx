@@ -3,7 +3,8 @@ import { BiSolidQuoteAltLeft } from "react-icons/bi";
 
 export default function TestimonialCard({ name, review, rating }) {
     return (
-        <div className="bg-gradient-to-b from-[#a8edea] to-[#fed6e3] rounded-[24px] shadow-lg p-6 max-w-[388px] w-full h-[369px] flex flex-col justify-between">
+        <div className="px-5 py-3">
+            <div className="testimonialCard bg-gradient-to-b from-[#a8edea] to-[#fed6e3] rounded-[24px] p-6 w-[388px] w-full h-[369px] flex flex-col justify-between duration-300">
             <div>
                 <BiSolidQuoteAltLeft className="text-4xl text-white" />
                 <h3 className="font-bold mt-2 text-2xl md:text-3xl">{name}</h3> 
@@ -19,6 +20,7 @@ export default function TestimonialCard({ name, review, rating }) {
                     />
                 ))}
             </div>
+        </div>
         </div>
     );
 }

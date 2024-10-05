@@ -1,16 +1,12 @@
 'use client'
-
-import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
-import BlogCard from '../../components/BlogCard';
+import Testimonials from '../../components/Testimonials'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { truncateText } from '../../utils/textUtils';
-import Link from 'next/link';
 
 // Custom left arrow component
 const PrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="absolute md:absolute md:left-0 md:transform md:-translate-x-6 left-0 top-1/2 transform -translate-x-5 -translate-y-1/2 cursor-pointer z-10">
+    <div onClick={onClick} className="absolute md:absolute md:left-0 md:transform md:-translate-x-5 left-0 top-1/2 transform -translate-x-2 -translate-y-1/2 cursor-pointer z-10">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
@@ -28,7 +24,7 @@ const PrevArrow = ({ onClick }) => (
 );
 
 const NextArrow = ({ onClick }) => (
-    <div onClick={onClick} className="absolute md:absolute md:right-0 md:transform md:translate-x-3 right-0 top-1/2 transform translate-x-1 -translate-y-1/2 cursor-pointer">
+    <div onClick={onClick} className="absolute md:absolute md:right-0 md:transform md:translate-x-1/3 right-0 top-1/2 transform translate-x-1 -translate-y-1/2 cursor-pointer">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
@@ -45,36 +41,41 @@ const NextArrow = ({ onClick }) => (
     </div>
 );
 
+
 export default function BlogCarousel() {
-    const [topBlogs, setTopBlogs] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 
-    if (!apiKey) {
-        throw new Error('API key is missing.');
-    }
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch("https://harmony-backend-z69j.onrender.com/api/admin/get/top/blogs", {
-                    method: "GET", headers: { 'x-api-key': apiKey }
-                });
-                if (!response.ok) {
-                    throw new Error("Failed to fetch data");
-                }
-
-                const data = await response.json();
-                console.log("data", data);
-                setTopBlogs(data?.blogs);
-                setLoading(false);
-            } catch (error) {
-                console.error("something went wrong", error);
-                setLoading(false);
-            }
-        };
-        fetchData();
-    }, []);
+    const testimonials = [
+        {
+            name: "Shubham Solanki",
+            review: "I am so happy to join Harmony therapy for my Personal Mental Health issues. The doctor was awesome, even I did not spend that much in my therapy and still got the best treatments from them. Thanks to Harmony Therapy.",
+            rating: 5,
+        },
+        {
+            name: "Aman Gupta",
+            review: "Harmony Therapy has been a blessing for my mental health journey. The platform offers personalized tools that helped me overcome my anxiety and build a positive outlook.",
+            rating: 4,
+        },
+        {
+            name: "Neha Sharma",
+            review: "Great experience overall! The therapists are very supportive, and the platform is easy to use. I recommend Harmony Therapy to anyone struggling with mental health.",
+            rating: 5,
+        },
+        {
+            name: "Shivam Solanki",
+            review: "I am so happy to join Harmony therapy for my Personal Mental Health issues. The doctor was awesome, even I did not spend that much in my therapy and still got the best treatments from them. Thanks to Harmony Therapy.",
+            rating: 5,
+        },
+        {
+            name: "Chaman Gupta",
+            review: "Harmony Therapy has been a blessing for my mental health journey. The platform offers personalized tools that helped me overcome my anxiety and build a positive outlook.",
+            rating: 4,
+        },
+        {
+            name: "Nehal Sharma",
+            review: "Great experience overall! The therapists are very supportive, and the platform is easy to use. I recommend Harmony Therapy to anyone struggling with mental health.",
+            rating: 5,
+        },
+    ];
 
     const settings = {
         // dots: true,
@@ -108,37 +109,20 @@ export default function BlogCarousel() {
     };
 
     return (
-        <div className="mt-10 w-full mx-auto">
-            {!loading ? (
-                topBlogs.length > 0 ? (
-                    <Slider {...settings}>
-                        {topBlogs.map((blog, index) => (
-                            <div key={index} className="carousel-slide">
-                                <Link href={`/allBlogs/${blog.id}`}>
-                                    <BlogCard
-                                        image={blog.data.images[0] ? blog.data.images[0] : "/public/assests/avatar.jpg"}
-                                        heading={truncateText(
-                                            blog?.data?.headings?.h1?.[0] ||
-                                            blog?.data?.headings?.h2?.[0] ||
-                                            'No headings available',
-                                            15
-                                        )}
-                                        para={truncateText(blog?.data?.paragraphs?.join(' '), 100)}
-                                    />
-                                </Link>
-                            </div>
-                        ))}
-                    </Slider>
-                ) : (
-                    <div className="text-center mt-5">
-                        <p className="text-gray-600">No Blog found</p>
+        <div className="w-full">
+
+            <Slider {...settings}>
+                {testimonials.map((testimonial, index) => (
+                    <div key={index} className="carousel-slide">
+                            <Testimonials
+                                key={index}
+                                name={testimonial.name}
+                                review={testimonial.review}
+                                rating={testimonial.rating}
+                            />
                     </div>
-                )
-            ) : (
-                <div className="text-center mt-5">
-                    <p className="text-gray-600">Loading Blogs...</p>
-                </div>
-            )}
+                ))}
+            </Slider>
         </div>
     );
 }

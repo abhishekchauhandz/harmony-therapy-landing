@@ -51,9 +51,15 @@ body {
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.blogCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(117, 117, 117, 0.2), 0 15px 25px rgba(99, 98, 98, 0.1);
+.blogCard,
+.testimonialCard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blogCard:hover,
+.testimonialCard:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  overflow: visible; 
 }
 
 
