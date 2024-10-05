@@ -27,7 +27,7 @@ export default function CertifiedConsultant() {
         };
 
         fetchConsultants();
-    }, []);
+    }, [apiKey]);
 
     return (
         <>

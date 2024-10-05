@@ -74,7 +74,7 @@ export default function BlogCarousel() {
             }
         };
         fetchData();
-    }, []);
+    }, [apiKey]);
 
     const settings = {
         // dots: true,

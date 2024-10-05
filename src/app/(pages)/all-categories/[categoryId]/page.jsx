@@ -39,7 +39,7 @@ const BlogPost = () => {
 
             fetchBlog();
         }
-    }, [categoryId]);
+    }, [categoryId, apiKey]);
 
     return (
         <div className="w-full px-0 md:px-20 pt-32 md:pt-32">

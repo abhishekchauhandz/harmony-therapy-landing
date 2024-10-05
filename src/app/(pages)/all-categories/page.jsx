@@ -27,7 +27,7 @@ export default function AllCategories() {
         };
 
         fetchConsultants();
-    }, []);
+    }, [apiKey]);
 
 
     return (
