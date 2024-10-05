@@ -27,7 +27,7 @@ export default function AllCategories() {
         };
 
         fetchConsultants();
-    }, [apiKey]);
+    }, []);
 
 
     return (
@@ -39,7 +39,7 @@ export default function AllCategories() {
                 <div className="flex flex-wrap gap-10 md:px-5 px-1 mt-5">
                     {categories.length > 0 ? (
                         categories.map((category, index) => (
-                            <Link href={`/all-categories/${category.id}`}>
+                            <Link href={`/all-categories/${category.id}`} key={category.id}>
                              <div key={index} className="flex flex-col items-center mb-2">
                                 <div className="rounded-full w-[60px] h-[60px]">
                                     <Image

@@ -32,7 +32,7 @@ function AllBlogsPage() {
             }
         };
         fetchData();
-    }, [apiKey]);
+    }, []);
 
     if (loading) {
         return (
