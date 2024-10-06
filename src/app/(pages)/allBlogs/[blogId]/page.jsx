@@ -41,7 +41,7 @@ const BlogPost = () => {
         <div className="w-full px-0 md:px-20 pt-32 md:pt-32">
             {loading ? (
                 <div className="flex justify-center items-center h-[100vh]">
-                    <h4 className="text-4xl text-[#33C9D2]">Loading..</h4>
+                    <h4 className="mx-2 text-[#33C9D2]">Loading..</h4>
                 </div>
             ) : blog ? (
                 <div className='flex items-center justify-center p-10'>

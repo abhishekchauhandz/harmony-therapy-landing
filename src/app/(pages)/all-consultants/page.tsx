@@ -43,7 +43,7 @@ const DoctorCardView = () => {
     if (loading) {
         return (
             <div className="flex justify-center items-center h-[100vh]">
-                <h4 className="mx-2">Loading..</h4>
+                <h4 className="mx-2 text-[#33C9D2]">Loading..</h4>
             </div>
         );
     }
@@ -51,7 +51,7 @@ const DoctorCardView = () => {
     return (
         <div className="flex flex-col gap-5 p-5 w-full pt-20 md:px-10">
             {doctorData.length === 0 ? (
-                <div className="text-center text-xl text-gray-600 h-[100vh]">
+                <div className="text-center text-xl text-gray-600 h-[100vh] text-[#33C9D2]">
                     No data found
                 </div>
             ) : (

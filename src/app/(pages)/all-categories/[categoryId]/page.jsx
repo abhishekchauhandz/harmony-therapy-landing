@@ -24,12 +24,12 @@ const BlogPost = () => {
                         headers: { 'x-api-key': apiKey }
                     });
 
-                    if(!response.ok) {
+                    if (!response.ok) {
                         throw new Error("Failed fetching category")
                     }
                     const data = await response.json();
-                   console.log("data", data)
-                   setCategory(data?.msg)
+                    console.log("data", data)
+                    setCategory(data?.msg)
                     setLoading(false);
                 } catch (error) {
                     console.error('Error fetching category data:', error);
@@ -45,14 +45,14 @@ const BlogPost = () => {
         <div className="w-full px-0 md:px-20 pt-32 md:pt-32">
             {loading ? (
                 <div className="flex justify-center items-center h-[100vh]">
-                    <h4 className="text-4xl text-[#33C9D2]">Loading..</h4>
+                    <h4 className="mx-2 text-[#33C9D2]">Loading..</h4>
                 </div>
             ) : category ? (
                 <div className='flex items-center justify-center p-10'>
                     <div className="bg-white p-10 w-full rounded-3xl h-auto">
                         <div className="imageContainer flex items-center justify-center mb-4 border border-gray-400 rounded-lg">
                             <Image
-                                 src={'/category.png'}  // {consultant.imagePath.startsWith('/') ? consultant.imagePath : `/${consultant.imagePath}`} 
+                                src={'/category.png'}  // {consultant.imagePath.startsWith('/') ? consultant.imagePath : `/${consultant.imagePath}`} 
                                 alt="Category Image"
                                 width={300}
                                 height={200}
@@ -60,11 +60,11 @@ const BlogPost = () => {
                             />
                         </div>
                         <h1 className='text-4xl'>{category?.name}</h1>
-                        
+
                     </div>
                 </div>
             ) : (
-                <div>Category not found.</div>
+                <p className='text-[#33C9D2]'>Category not found.</p>
             )}
         </div>
 

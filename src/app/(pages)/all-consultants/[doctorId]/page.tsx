@@ -40,13 +40,13 @@ const StaffDetail: React.FC = () => {
     if (loading) {
         return (
             <div className="flex justify-center items-center h-[100vh]">
-                <h4 className="mx-2">Loading..</h4>
+                <h4 className="mx-2 text-[#33C9D2]">Loading..</h4>
             </div>
         );
     }
 
     if (!doctorData) {
-        return <div className="flex justify-center items-center h-screen">No data found</div>;
+        return <div className="flex justify-center items-center h-screen text-[#33C9D2]">No data found</div>;
     }
 
     return (
@@ -74,7 +74,7 @@ const StaffDetail: React.FC = () => {
                 </div>
 
                 {/* Doctor Details */}
-                <div className="md:px-10 px-2 md:w-[400px] w-full flex flex-col justify-between">
+                <div className="md:px-10 px-4 md:w-[400px] w-full flex flex-col justify-between">
                     <h6 className="font-bold text-2xl text-[#33C9D2] mb-10 text-center">Details</h6>
                     <div className="grid grid-cols-2 gap-y-4 md:gap-x-8 gap-x-0">
                         {/* Email */}
@@ -82,7 +82,7 @@ const StaffDetail: React.FC = () => {
                             <p className="text-gray-700 font-medium">Email:</p>
                         </div>
                         <div className="col-span-1">
-                            <p>{doctorData.email}</p>
+                            <p className="break-words">{doctorData.email}</p> {/* Ensure text breaks if too long */}
                         </div>
 
                         {/* Gender */}
@@ -126,6 +126,7 @@ const StaffDetail: React.FC = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     );

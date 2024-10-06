@@ -31,7 +31,7 @@ export default function AllCategories() {
 
 
     return (
-        <div className="w-full px-0 md:px-20 py-10">
+        <div className="w-full px-5 md:px-20 py-10">
             <div className="p-5 mt-32 bg-white rounded-[25px]">
                 <div className="font-montserrat text-3xl font-bold">
                     <h1>Certified Consultants for all <span className="text-[#FFA05D]">Mental Health Categories</span></h1>
@@ -55,7 +55,7 @@ export default function AllCategories() {
                             </Link>
                         ))
                     ) : (
-                        <p>Loading categories...</p>
+                        <p className="text-[#33C9D2]">Loading categories...</p>
                     )}
                 </div>
             </div>

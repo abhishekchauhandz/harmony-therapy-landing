@@ -36,8 +36,8 @@ function AllBlogsPage() {
 
     if (loading) {
         return (
-            <div className="flex justify-center items-center min-h-screen">
-                <h4 className="text-4xl text-[#33C9D2]">Loading..</h4>
+            <div className="flex justify-center items-center h-[100vh]">
+                <h4 className="mx-2 text-[#33C9D2]">Loading..</h4>
             </div>
         );
     }
@@ -46,9 +46,9 @@ function AllBlogsPage() {
         <div className="md:p-10 p-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:ml-6 ml-4 md:px-10 pt-32 md:pt-32">
                 {blogData?.map((data, index) => (
-                    <Link 
-                        href={`/allBlogs/${data?.id}`} 
-                        key={index} 
+                    <Link
+                        href={`/allBlogs/${data?.id}`}
+                        key={index}
                         className="mb-4"
                     >
                         <BlogCard
