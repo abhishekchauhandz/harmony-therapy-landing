@@ -61,7 +61,7 @@ export default function Footer() {
                                 <h1 className="text-lg md:text-xl font-bold">Quick Links</h1>
                                 <ul className="mt-5 text-sm">
                                     <li>Help</li>
-                                    <li>Contact Us</li>
+                                    <li><Link href="/contact-us" className="underline">Contact Us</Link></li>
                                     <li>Mental health resources</li>
                                     <li>Accessibility</li>
                                     <li>Security</li>
