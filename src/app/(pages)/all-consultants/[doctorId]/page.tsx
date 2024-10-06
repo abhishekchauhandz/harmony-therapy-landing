@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import DoctorCard from '../../../../components/DoctorCard';
+import Image from 'next/image';
 
 const StaffDetail: React.FC = () => {
     const [doctorData, setDoctorData] = useState<any>(null);
@@ -62,59 +63,76 @@ const StaffDetail: React.FC = () => {
                 </button>
             </Link> */}
             <div className="flex md:flex flex-col md:flex-row items-center gap-10 md:py-0 py-5">
-                <div className="">
-                    <DoctorCard name={doctorData.name || doctorData.doctorName} role={doctorData.role} imageUrl="/altImage.png" />
+                <div className="rounded-3xl p-3 m-2 w-[300px] h-[320px] shadow-md hover:shadow-lg transition-shadow cursor-pointer flex flex-col justify-between bg-white">
+                    <div className="relative w-full h-[80%] rounded-3xl">
+                        <Image
+                            src="/altImage.png" 
+                            alt="Doctor"
+                            fill
+                            objectFit='cover'
+                        />
+                    </div>
+                    <div className="text-center mt-3">
+                        <h3 className="text-sm md:text-xl font-bold text-gray-800">
+                        {doctorData.name || doctorData.doctorName}
+                        </h3>
+                        <p className="text-sm text-gray-600">
+                        {doctorData.role}
+                        </p>
+                    </div>
                 </div>
-                <div className="md:px-10 px-2 md:w-[400px] w-full flex flex-col justify-between">
+                <div className="md:px-10 px-4 md:w-[400px] w-full flex flex-col justify-between">
                     <h6 className="font-bold text-3xl text-[#33C9D2] mb-10 text-center">Details</h6>
-                    <div className="flex flex-col gap-x-4 gap-y-2">
-                        <div className="flex gap-20">
-                            <p className="text-gray-700 font-medium md:w-1/2">Email:</p>
-                            <div className='md:w-1/2'>
-                                <p>{doctorData.email}</p>
-                            </div>
+                    <div className="grid grid-cols-2 gap-y-4 md:gap-x-8">
+                        {/* Email */}
+                        <div className="md:col-span-1">
+                            <p className="text-gray-700 font-medium">Email:</p>
+                        </div>
+                        <div className="md:col-span-1">
+                            <p>{doctorData.email}</p>
                         </div>
 
-                        {/* <div className="flex gap-20">
-                            <p className="text-gray-700 font-medium md:w-1/2">Contact:</p>
-                            <p className='md:w-1/2'>{doctorData.contactNumber}</p>
-                        </div> */}
-
-                        <div className="flex gap-20">
-                            <p className="text-gray-700 font-medium md:w-1/2">Gender:</p>
-                            <div className='md:w-1/2'>
-                                <p>{doctorData.gender}</p>
-                            </div>
+                        {/* Gender */}
+                        <div className="md:col-span-1">
+                            <p className="text-gray-700 font-medium">Gender:</p>
+                        </div>
+                        <div className="md:col-span-1">
+                            <p>{doctorData.gender}</p>
                         </div>
 
-                        <div className="flex gap-20">
-                            <p className="text-gray-700 font-medium md:w-1/2">Status:</p>
-                            <div className='md:w-1/2'>
-                                <p>{doctorData.status}</p>
-                            </div>
+                        {/* Status */}
+                        <div className="md:col-span-1">
+                            <p className="text-gray-700 font-medium">Status:</p>
+                        </div>
+                        <div className="md:col-span-1">
+                            <p>{doctorData.status}</p>
                         </div>
 
-                        <div className="flex gap-20">
+                        {/* Max Education */}
+                        <div className="md:col-span-1">
                             <p className="text-gray-700 font-medium">Max. Education:</p>
-                            <div>
-                                <p>{doctorData.maximumEducation}</p>
-                            </div>
+                        </div>
+                        <div className="md:col-span-1">
+                            <p>{doctorData.maximumEducation}</p>
                         </div>
 
-                        <div className="flex gap-20">
-                            <p className="text-gray-700 font-medium md:w-1/2">Price per session:</p>
-                            <div className='md:w-1/2'>
-                                <p >{doctorData.pricePerSession}</p>
-                            </div>
+                        {/* Price per session */}
+                        <div className="md:col-span-1">
+                            <p className="text-gray-700 font-medium">Price per session:</p>
+                        </div>
+                        <div className="md:col-span-1">
+                            <p>{doctorData.pricePerSession}</p>
                         </div>
 
-                        <div className="flex gap-20">
-                            <p className="text-gray-700 font-medium md:w-1/2">Experience:</p>
-                            <div className='md:w-1/2'>
-                                <p >{doctorData.experience}</p>
-                            </div>
+                        {/* Experience */}
+                        <div className="md:col-span-1">
+                            <p className="text-gray-700 font-medium">Experience:</p>
+                        </div>
+                        <div className="md:col-span-1">
+                            <p>{doctorData.experience}</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
