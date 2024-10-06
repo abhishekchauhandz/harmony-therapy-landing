@@ -81,7 +81,7 @@ const StaffDetail: React.FC = () => {
                         </p>
                     </div>
                 </div>
-                <div className="md:px-10 px-4 md:w-[400px] w-full flex flex-col justify-between">
+                <div className="md:px-10 px-0 md:w-[400px] w-full flex flex-col justify-between">
                     <h6 className="font-bold text-3xl text-[#33C9D2] mb-10 text-center">Details</h6>
                     <div className="grid grid-cols-2 gap-y-4 md:gap-x-8">
                         {/* Email */}
