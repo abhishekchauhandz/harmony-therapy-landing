@@ -7,6 +7,7 @@ import VideoSection from './components/VideoSection'
 import Blogs from './components/Blogs'
 import CostSection from './components/CostSection'
 import AOSWrapper from '../../src/components/AOSWrapper'
+import FAQ from '../app/components/FAQ'
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
           <div id="blogs">
             <Blogs />
           </div>
+          <FAQ />
           <CostSection />
         </AOSWrapper>
       </main>

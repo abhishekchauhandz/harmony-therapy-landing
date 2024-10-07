@@ -1,6 +1,9 @@
+
 import Image from "next/image";
+import ExpandedContent from './ExpandedContent'
 
 export default function AboutUs() {
+
     return (
         <div className="w-full px-5 md:px-20">
 
@@ -21,7 +24,7 @@ export default function AboutUs() {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row-reverse items-center mb-16" data-aos="fade-left">
+            <div className="flex flex-col md:flex-row-reverse items-center md:mb-2 mb-16" data-aos="fade-left">
                 <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-end">
                     <Image src="/hero.png" width={500} height={380} alt="our mission" />
                 </div>
@@ -29,8 +32,6 @@ export default function AboutUs() {
                     <h2 className="text-4xl font-semibold mb-4">Our <span className="text-[#33C9D2]">Mission</span></h2>
                     <p className="text-lg">
                         At Harmony, our mission is to provide easily accessible, authentic, reliable mental health care by a team of highly competent experts. Through evidence-based practices and holistic approaches, we strive to create a supportive environment where clients can discover their true potential and lead fulfilling, harmonious lives.
-
-
                     </p>
                 </div>
             </div>
@@ -47,7 +48,7 @@ export default function AboutUs() {
                 </div>
             </div>
 
-            <div className="flex flex-col-reverse md:flex items-center mb-16" data-aos="fade-up">
+            <div className="flex flex-col-reverse md:flex items-center mb-10" data-aos="fade-up">
                 {/* <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-end">
                     <Image src="/modal.png" width={400} height={400} alt="Why Choose Us" />
                 </div> */}
@@ -56,7 +57,7 @@ export default function AboutUs() {
                     <p className="text-lg">
                         At Harmony, we promise to deliver
                     </p>
-                    <ul className="list-disc list-outside flex flex-col gap-5 mt-5 px-10 py-5">
+                    <ul className="list-disc list-outside flex flex-col gap-5 px-10 py-5">
                         <li><span className="font-bold">Accessible services &ndash;</span> You can seek our services from the comfort of your chosen environment &ndash; whether it&apos;s your home, workplace and/or any other comfortable environment</li>
                         <li><span className="font-bold">Reliable Professionals &ndash;</span> All Clinicians onboard are licensed and competent to deliver authentic, evidence-based practices. We as professionals believe in our continues professional development to ensure that we keep ourselves abreast with recent trends </li>
                         <li><span className="font-bold">Transparent approach &ndash;</span> As a service user you will have the choice to review your clinician&apos;s profile and chose the best match for yourself</li>
@@ -66,10 +67,22 @@ export default function AboutUs() {
                     </ul>
                 </div>
             </div>
+            <div className="mb-16" data-aos="fade-up">
+                <h2 className="text-4xl font-semibold mb-4">What We Do <span className="text-[#33C9D2]">Not</span> Offer</h2>
+                <div className="md:px-5 px-2">
+                    <p className="text-lg">
+                        At Harmony, we do not offer emergency support, crisis intervention, or deal with life-threatening situations such as suicide. We humbly request our clients to seek immediate support from nearby health providers or emergency services in such cases.
+                    </p>
+                    <p className="text-lg mt-4">
+                        <i className="font-bold">We strongly believe that the right support at the right time can prevent a life. </i>
+                        We are a well-informed organization and understand our own limitations. Please ensure you reach out to appropriate support in a crisis. Your wellbeing is important.
+                    </p>
+                </div>
+            </div>
             <div className="mb-16">
-                <h2 className="text-4xl font-semibold mb-4">Our <span className="text-[#33C9D2]">Experience</span></h2>
+                <h2 className="text-4xl font-semibold mb-4">Founder <span className="text-[#33C9D2]">and Director</span></h2>
 
-                <div className="px-5">
+                <div className="md:px-5 px-2">
                     <div className="flex flex-col md:flex-row justify-between gap-10" data-aos="fade-left">
                         <div className="flex flex-col gap-5 md:w-[60%]">
                             <p className="text-lg">
@@ -95,14 +108,18 @@ export default function AboutUs() {
                         </div>
                     </div>
 
-                    <p className="text-lg">
+                    <p className="text-lg" data-aos="fade-left">
                         She envisions a future where mental health needs are at the forefront of societal priorities.
                     </p>
-                    <p className="text-lg">
+                    <p className="text-lg mt-5" data-aos="fade-left">
                         Her creative ideas knows no boundaries when it comes to focus on mental wellbeing. She believes in the power of positive ideas and change.
                         Harmony is an idea that started as a budding Clinical Psychologist and has now turned into reality with her persistence and belief in the power of her profession.
                     </p>
+                    <p className="text-lg mt-5" data-aos="fade-left">Her creative ideas knows no boundaries when it comes to focus on mental wellbeing. She believes in the power of positive ideas and change.
+                        Harmony is an idea that started as a budding Clinical Psychologist and has now turned into reality with her persistence and belief in the power of her profession
+                    </p>
                 </div>
+                <ExpandedContent />
             </div>
         </div>
     );

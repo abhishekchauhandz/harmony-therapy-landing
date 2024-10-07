@@ -62,7 +62,7 @@ const DoctorCardView = () => {
                             <div key={doctor.id} className="flex justify-center">
                                 <Link href={detailPath} passHref>
                                     <div className="cursor-pointer">
-                                        <DoctorCard name={doctor.name || doctor.username} role={doctor.role} imageUrl="/altImage.png" />
+                                        <DoctorCard name={doctor.doctorName || doctor.username} role={doctor.role} imageUrl="/altImage.png" />
                                     </div>
                                 </Link>
                             </div>

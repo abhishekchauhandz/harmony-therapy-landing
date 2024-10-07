@@ -65,7 +65,7 @@ const StaffDetail: React.FC = () => {
                     </div>
                     <div className="text-center mt-3">
                         <h3 className="text-sm md:text-xl font-bold text-gray-800">
-                            {doctorData.name || doctorData.doctorName}
+                            {doctorData.doctorName || doctorData.username}
                         </h3>
                         <p className="text-sm text-gray-600">
                             {doctorData.role}
@@ -77,13 +77,6 @@ const StaffDetail: React.FC = () => {
                 <div className="md:px-10 px-4 md:w-[400px] w-full flex flex-col justify-between">
                     <h6 className="font-bold text-2xl text-[#33C9D2] mb-10 text-center">Details</h6>
                     <div className="grid grid-cols-2 gap-y-4 md:gap-x-8 gap-x-0">
-                        {/* Email */}
-                        <div className="col-span-1">
-                            <p className="text-gray-700 font-medium">Email:</p>
-                        </div>
-                        <div className="col-span-1">
-                            <p className="break-words">{doctorData.email}</p> {/* Ensure text breaks if too long */}
-                        </div>
 
                         {/* Gender */}
                         <div className="col-span-1">

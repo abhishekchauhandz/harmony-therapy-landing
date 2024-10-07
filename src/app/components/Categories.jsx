@@ -39,8 +39,8 @@ export default function CertifiedConsultant() {
                         </div>
                         <div className="flex">
                             <Link href="/all-consultants">
-                                <button className="bg-[#FFA05D] md:p-3 p-0 text-base rounded-xl flex h-[50px] text-white font-bold md:mx-3 mx-3 mt-3 md:mt-0">
-                                    See All Consultants <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" className="ml-3">
+                                <button className="bg-[#FFA05D] md:p-3 px-2 py-3 md:text-base text-[12px] rounded-xl flex items-center md:h-[50px] h-[40px] text-white font-bold md:mx-3 mx-3 mt-3 md:mt-0">
+                                    See All Consultants <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" className="ml-3 md:w-[32px] md:h-[32px] w-[14px] h-[14px]">
                                         <g clipPath="url(#clip0_1554_2189)">
                                             <path fillRule="evenodd" clipRule="evenodd" d="M28 5C28 4.73478 27.8947 4.48043 27.7071 4.29289C27.5196 4.10536 27.2653 4 27 4H15C14.7348 4 14.4805 4.10536 14.2929 4.29289C14.1054 4.48043 14 4.73478 14 5C14 5.26522 14.1054 5.51957 14.2929 5.70711C14.4805 5.89464 14.7348 6 15 6H24.586L4.29204 26.292C4.19907 26.385 4.12531 26.4954 4.075 26.6168C4.02468 26.7383 3.99878 26.8685 3.99878 27C3.99878 27.1315 4.02468 27.2617 4.075 27.3832C4.12531 27.5046 4.19907 27.615 4.29204 27.708C4.38502 27.801 4.4954 27.8747 4.61688 27.925C4.73835 27.9754 4.86855 28.0013 5.00004 28.0013C5.13153 28.0013 5.26173 27.9754 5.38321 27.925C5.50469 27.8747 5.61507 27.801 5.70804 27.708L26 7.414V17C26 17.2652 26.1054 17.5196 26.2929 17.7071C26.4805 17.8946 26.7348 18 27 18C27.2653 18 27.5196 17.8946 27.7071 17.7071C27.8947 17.5196 28 17.2652 28 17V5Z" fill="white" />
                                         </g>
@@ -53,8 +53,8 @@ export default function CertifiedConsultant() {
                                 </button>
                             </Link>
                             <Link href="/all-categories">
-                                <button className="bg-[#FFA05D] md:p-3 p-1 text-base rounded-xl flex h-[50px] text-white font-bold md:mx-3 mx-4 mt-3 md:mt-0">
-                                    Explore all <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" className="ml-3">
+                                <button className="bg-[#FFA05D] md:p-3 px-2 py-3 md:text-base text-[12px] rounded-xl flex items-center md:h-[50px] h-[40px] text-white font-bold md:mx-3 mx-3 mt-3 md:mt-0">
+                                    Explore all <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" className="ml-3 md:w-[32px] md:h-[32px] w-[14px] h-[14px]">
                                         <g clipPath="url(#clip0_1554_2189)">
                                             <path fillRule="evenodd" clipRule="evenodd" d="M28 5C28 4.73478 27.8947 4.48043 27.7071 4.29289C27.5196 4.10536 27.2653 4 27 4H15C14.7348 4 14.4805 4.10536 14.2929 4.29289C14.1054 4.48043 14 4.73478 14 5C14 5.26522 14.1054 5.51957 14.2929 5.70711C14.4805 5.89464 14.7348 6 15 6H24.586L4.29204 26.292C4.19907 26.385 4.12531 26.4954 4.075 26.6168C4.02468 26.7383 3.99878 26.8685 3.99878 27C3.99878 27.1315 4.02468 27.2617 4.075 27.3832C4.12531 27.5046 4.19907 27.615 4.29204 27.708C4.38502 27.801 4.4954 27.8747 4.61688 27.925C4.73835 27.9754 4.86855 28.0013 5.00004 28.0013C5.13153 28.0013 5.26173 27.9754 5.38321 27.925C5.50469 27.8747 5.61507 27.801 5.70804 27.708L26 7.414V17C26 17.2652 26.1054 17.5196 26.2929 17.7071C26.4805 17.8946 26.7348 18 27 18C27.2653 18 27.5196 17.8946 27.7071 17.7071C27.8947 17.5196 28 17.2652 28 17V5Z" fill="white" />
                                         </g>
@@ -68,17 +68,17 @@ export default function CertifiedConsultant() {
                             </Link>
                         </div>
                     </div>
-                    <div className="flex flex-wrap gap-10 md:px-5 px-1 pb-4">
+                    <div className="flex flex-wrap gap-10 md:px-5 px-0 pb-4">
                         {categories.length > 0 ? (
                             categories.map((category, index) => (
                                 <Link href={`/all-categories/${category.id}`} key={category.id}>
                                     <div key={index} className="flex flex-col items-center mb-2">
-                                        <div className="rounded-full w-[60px] h-[60px]">
+                                        <div className="rounded-full w-[50px] h-[50px]">
                                             <Image
                                                 src={'/category.png'}  // {category.imagePath.startsWith('/') ? category.imagePath : `/${category.imagePath}`} 
                                                 alt={category.name}
-                                                width={80}
-                                                height={80}
+                                                width={60}
+                                                height={60}
 
                                             />
                                         </div>
