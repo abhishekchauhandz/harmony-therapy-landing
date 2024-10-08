@@ -11,7 +11,7 @@ export default function AboutUs() {
                 <div className="w-full md:w-1/2 mb-8 md:mb-0">
                     <Image src="/hero.png" width={500} height={380} alt="About Harmony" />
                 </div>
-                <div className="w-full md:w-1/2 md:pt-10">
+                <div className="w-full md:w-1/2 py-5 bg-white px-4 rounded-3xl md:mt-10">
                     <h2 className="text-3xl font-semibold mb-4">Welcome to <span className="text-[#33C9D2]">Harmony:</span> Your trusted Mental Health Care/support</h2>
                     <p className="text-lg flex justify-center">
                         Harmony is created with the passion to provide authentic and reliable mental health services from the comfort of your own space. We bring you 20+ years of experience with our professionals onboard in dealing with diverse mental health conditions.
@@ -19,7 +19,6 @@ export default function AboutUs() {
                         We value and respect each client&apos;s lived journey and offer them safe space to explore and embrace oneself as a whole individual.
                         We offer a wide range of services such as individual therapy, family therapy, adolescent therapy, group
                         therapy, resource referral and follow up and after care
-
                     </p>
                 </div>
             </div>
@@ -28,7 +27,7 @@ export default function AboutUs() {
                 <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-end">
                     <Image src="/hero.png" width={500} height={380} alt="our mission" />
                 </div>
-                <div className="w-full md:w-1/2">
+                <div className="w-full md:w-1/2 bg-white py-5 px-4 rounded-3xl">
                     <h2 className="text-4xl font-semibold mb-4">Our <span className="text-[#33C9D2]">Mission</span></h2>
                     <p className="text-lg">
                         At Harmony, our mission is to provide easily accessible, authentic, reliable mental health care by a team of highly competent experts. Through evidence-based practices and holistic approaches, we strive to create a supportive environment where clients can discover their true potential and lead fulfilling, harmonious lives.
@@ -40,7 +39,7 @@ export default function AboutUs() {
                 <div className="w-full md:w-1/2 mb-8 md:mb-0">
                     <Image src="/hero.png" width={500} height={380} alt="our vision" />
                 </div>
-                <div className="w-full md:w-1/2">
+                <div className="w-full md:w-1/2 bg-white py-5 px-4 rounded-3xl">
                     <h2 className="text-4xl font-semibold mb-4">Our <span className="text-[#33C9D2]">Vision</span></h2>
                     <p className="text-lg">
                         We envision reaching out to every member of the community and have 100% mental health literacy rates by offering affordable and easily accessible mental health services and by offering opportunities of community engagement. We are committed to foster a barrier free environment where people are confident and comfortable to support their own mental health and those around them.
@@ -52,7 +51,7 @@ export default function AboutUs() {
                 {/* <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-end">
                     <Image src="/modal.png" width={400} height={400} alt="Why Choose Us" />
                 </div> */}
-                <div className="w-full md:w-full">
+                <div className="w-full md:w-full bg-white py-3 px-4 rounded-3xl">
                     <h2 className="text-4xl font-semibold mb-4">Why <span className="text-[#33C9D2]">Choose</span> Us</h2>
                     <p className="text-lg">
                         At Harmony, we promise to deliver
@@ -67,19 +66,24 @@ export default function AboutUs() {
                     </ul>
                 </div>
             </div>
-            <div className="mb-16" data-aos="fade-up">
+            <div className="mb-16 bg-white py-5 px-4 rounded-3xl" data-aos="fade-up">
                 <h2 className="text-4xl font-semibold mb-4">What We Do <span className="text-[#33C9D2]">Not</span> Offer</h2>
                 <div className="md:px-5 px-2">
                     <p className="text-lg">
                         At Harmony, we do not offer emergency support, crisis intervention, or deal with life-threatening situations such as suicide. We humbly request our clients to seek immediate support from nearby health providers or emergency services in such cases.
                     </p>
-                    <p className="text-lg mt-4">
-                        <i className="font-bold">We strongly believe that the right support at the right time can prevent a life. </i>
-                        We are a well-informed organization and understand our own limitations. Please ensure you reach out to appropriate support in a crisis. Your wellbeing is important.
-                    </p>
+                    <div className="flex justify-between">
+                        <p className="text-lg mt-4">
+                            <i className="font-bold">We strongly believe that the right support at the right time can prevent a life. </i>
+                            We are a well-informed organization and understand our own limitations. Please ensure you reach out to appropriate support in a crisis. Your wellbeing is important.
+                        </p>
+                        <div className="md:w-full mb-8 md:mb-0 md:flex justify-center hidden">
+                            <Image src="/hero.png" width={200} height={280} alt="our vision" />
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="mb-16">
+            <div className="mb-16 bg-white py-5 px-4 rounded-3xl">
                 <h2 className="text-4xl font-semibold mb-4">Founder <span className="text-[#33C9D2]">and Director</span></h2>
 
                 <div className="md:px-5 px-2">

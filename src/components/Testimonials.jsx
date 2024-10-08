@@ -16,7 +16,7 @@ export default function TestimonialCard({ name, review, rating }) {
                 {[...Array(5)].map((_, i) => (
                     <FaStar
                         key={i}
-                        className={`text-xl ${i < rating ? 'text-yellow-500' : 'text-gray-300'}`}
+                        className={`text-xl ${i < rating ? 'text-[#]' : 'text-gray-300'}`}
                     />
                 ))}
             </div>

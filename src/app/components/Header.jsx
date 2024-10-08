@@ -71,7 +71,7 @@ export default function Header() {
               <Link href="/" className={isActiveLink('/')}>Home</Link>
               <Link href="/#we-deal-in" onClick={(e) => handleSmoothScroll(e, '/', 'we-deal-in')} className="text-[#777777]">We deal in</Link>
               <Link href="/about-us" className={isActiveLink('/about-us')}>About us</Link>
-              <Link href="/#blogs" onClick={(e) => handleSmoothScroll(e, '/', 'blogs')} className="text-[#777777]">Blogs</Link>
+              <Link href="/allBlogs" className={`${isActiveLink('/allBlogs')} `}>Blogs</Link>
               <Link href="/#events-articles" onClick={(e) => handleSmoothScroll(e, '/', 'events-articles')} className="text-[#777777]">Events and Articles</Link>
             </div>
 
@@ -100,7 +100,7 @@ export default function Header() {
             <Link href="/" className={`${isActiveLink('/')} py-2`} onClick={closeMenu}>Home</Link>
             <Link href="/#we-deal-in" onClick={(e) => handleSmoothScroll(e, '/', 'we-deal-in')} className="py-2 text-[#777777]">We deal in</Link>
             <Link href="/about-us" className={`${isActiveLink('/about-us')} py-2`} onClick={closeMenu}>About us</Link>
-            <Link href="/#blogs" onClick={(e) => handleSmoothScroll(e, '/', 'blogs')} className="py-2 text-[#777777]">Blogs</Link>
+            <Link href="/allBlogs" className={`${isActiveLink('/allBlogs')} py-2`}>Blogs</Link>
             <Link href="/#events-articles" onClick={(e) => handleSmoothScroll(e, '/', 'events-articles')} className="py-2 text-[#777777]">Events and Articles</Link>
           </div>
         )}

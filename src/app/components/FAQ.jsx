@@ -42,8 +42,8 @@ const FAQ = () => {
     ];
 
     return (
-        <div className="px-4 md:py-8 pt-16 md:pt-0 md:px-16">
-            <h1 className="text-3xl font-bold text-center mb-8">Frequently Asked <span className="text-[#33C9D2]">Questions</span></h1>
+        <div className="px-4 py-10 md:pt-0 pt-10 mt-16 md:pt-0 md:px-16 bg-white rounded-3xl">
+            <h1 className="text-3xl font-bold text-center mb-8 md:pt-8">Frequently Asked <span className="text-[#33C9D2]">Questions</span></h1>
             <div className="max-w-4xl mx-auto" data-aos="fade-up">
                 {faqs.map((faq, index) => (
                     <div key={index} className="mb-4">
@@ -59,7 +59,7 @@ const FAQ = () => {
                         <div
                             className={`overflow-hidden transition-all duration-500 ${openIndex === index ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}
                         >
-                            <div className="px-4 py-3 text-[#FFA05D] border-l-2 border-blue-300">
+                            <div className="px-4 py-3 border-l-2 border-blue-300">
                                 <p>{faq.answer}</p>
                             </div>
                         </div>

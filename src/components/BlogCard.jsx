@@ -5,8 +5,8 @@ import blogimg from '../../public/altImage.png';
 export default function BlogCard({ image, para, heading }) {
   return (
     <div className='py-3 px-4'>
-      <div className='blogCard p-4 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 hover:shadow-md'>
-        <div className='image-container relative w-full h-[200px] border-[0.5px] border-[rgba(11,11,11,0.3)] rounded-[10px]'>
+      <div className='blogCard p-4 border border-[#eee] rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 hover:shadow-md'>
+        <div className='image-container relative w-full h-[200px] border-[0.5px] border-[#eee] rounded-[10px]'>
           <Image
             src={image ? image : blogimg}
             alt="Blog Image"

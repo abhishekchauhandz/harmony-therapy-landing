@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function CostSection() {
     return (
         <>
-            <div className="flex justify-center items-center py-24 px-4 md:px-0">
+            <div className="flex justify-center items-center py-24 px-4 md:px-0 md:mt-16">
                 <div className="w-full md:w-[874px] h-auto md:h-[345px] rounded-3xl bg-white p-6 md:px-8 relative" data-aos="fade-right">
                     <div className="md:w-[60%] w-full h-full flex flex-col justify-between">
                         <div>

@@ -64,7 +64,7 @@ export default function Footer() {
                                 <ul className="mt-5 text-sm">
                                     <li><Link href="/all-consultants">All Consultants</Link></li>
                                     <li><Link href="/contact-us">Contact Us</Link></li>
-                                    <li><Link href='/privacy-policy' className="underline">Privacy Policy</Link></li>
+                                    <li><Link href='/privacy-policy'>Privacy Policy</Link></li>
                                 </ul>
                             </div>
                         </div>
