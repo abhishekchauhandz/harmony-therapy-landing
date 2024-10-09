@@ -114,6 +114,7 @@ const StaffDetail: React.FC = () => {
                             <div className="col-span-1">
                                 <p>{doctorData.experience}</p>
                             </div>
+                            <Link href="#"><button className='py-3 px-4 bg-[#FFA05D] rounded-3xl mt-4 text-white'>Book a session</button></Link>
                         </div>
                     </div>
                 </div>

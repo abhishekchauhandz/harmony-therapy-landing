@@ -9,7 +9,7 @@ export default function Service() {
         <div className="flex flex-col justify-center bg-transparent gap-10 px-4 pb-10" id="services">
             <div className='w-full h-auto bg-transparent rounded-3xl text-center p-5 flex flex-col items-center gap-7'>
                 <h1 className="font-bold text-4xl md:text-5xl">
-                    We are renowned for <span className="text-[#FFA05D]">what we serve</span>
+                We are committed to  <span className="text-[#FFA05D]">Your Wellbeing</span>
                 </h1>
                 <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-14">
                     <div className="flex flex-col gap-3 text-left bg-white p-5 rounded-3xl w-full md:w-[520px] h-auto" data-aos="fade-right">
@@ -32,14 +32,14 @@ export default function Service() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col gap-10">
+            {/* <div className="flex flex-col gap-10">
                 <h1 className="font-bold text-4xl md:text-5xl">
                     In 2 Decades, we have <span className="text-[#33C9D2]">earned this</span>
                 </h1>
                 <div data-aos="zoom-in">
                     <TestimonialCrousal />
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

@@ -5,9 +5,13 @@ import { MdPersonAddAlt1 } from 'react-icons/md';
 import { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { usePathname, useRouter } from 'next/navigation';
+import Popup from '../../components/Popup'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [weDealInDropdown, setWeDealInDropdown] = useState(false);
+  const [meetOurTeamDropdown, setMeetOurTeamDropdown] = useState(false);
+  const [popupOpen, setPopupOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -17,6 +21,8 @@ export default function Header() {
 
   const closeMenu = () => {
     setMenuOpen(false);
+    setWeDealInDropdown(false);
+    setMeetOurTeamDropdown(false);
   };
 
   const handleClickOutside = (event) => {
@@ -55,6 +61,14 @@ export default function Header() {
     closeMenu();
   };
 
+  const openPopup = () => {
+    setPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setPopupOpen(false);
+  };
+
   return (
     <>
       <header className="flex justify-center relative">
@@ -69,15 +83,50 @@ export default function Header() {
             {/* Desktop Navigation */}
             <div className="hidden md:flex text-[#777777] gap-10 text-base md:text-lg">
               <Link href="/" className={isActiveLink('/')}>Home</Link>
-              <Link href="/#we-deal-in" onClick={(e) => handleSmoothScroll(e, '/', 'we-deal-in')} className="text-[#777777]">We deal in</Link>
+              <div
+                onMouseEnter={() => setWeDealInDropdown(true)}
+                onMouseLeave={() => setWeDealInDropdown(false)}
+                className="relative group"
+              >
+                <Link
+                  href="/#we-offer"
+                  onClick={(e) => handleSmoothScroll(e, '/', 'we-offer')}
+                  className={isActiveLink('/category' || '/service')}
+                >
+                  We offer
+                </Link>
+                <span className="absolute top-2">&#129171;</span>
+                {weDealInDropdown && (
+                  <div className="absolute left-0 bg-white shadow-md p-2 rounded-xl z-10">
+                    <Link href="/category2" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Category</Link>
+                    <Link href="/service2" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Service</Link>
+                  </div>
+                )}
+              </div>
+              <div
+                onMouseEnter={() => setMeetOurTeamDropdown(true)}
+                onMouseLeave={() => setMeetOurTeamDropdown(false)}
+                className="relative group"
+              >
+                <Link href="#" className={isActiveLink('/clinical-psychologist' || '/psychiatrist')}>
+                  Meet Our Team
+                </Link>
+                <span className="absolute top-2">&#129171;</span>
+                {meetOurTeamDropdown && (
+                  <div className="absolute left-0 bg-white shadow-md p-2 rounded-xl z-10">
+                    <Link href="/clinical-psychologist" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Clinical Psychologist</Link>
+                    <Link href="/psychiatrist" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Psychiatrist</Link>
+                  </div>
+                )}
+              </div>
               <Link href="/about-us" className={isActiveLink('/about-us')}>About us</Link>
-              <Link href="/allBlogs" className={`${isActiveLink('/allBlogs')} `}>Blogs</Link>
-              <Link href="/#events-articles" onClick={(e) => handleSmoothScroll(e, '/', 'events-articles')} className="text-[#777777]">Events and Articles</Link>
+              <Link href="/#allBlogs" className={`${isActiveLink('/allBlogs')} `} onClick={() => openPopup('Blogs')}>Blogs</Link>
+              <Link href="/#events-articles" onClick={() => openPopup('Events and Articles Content')} className="text-[#777777]">Events and Articles</Link>
             </div>
 
             {/* Call-to-Action Button */}
             <button className="flex items-center px-4 py-2 text-white font-bold text-sm md:text-base bg-[#33C9D2] rounded-[10px]">
-              Get Free Session <MdPersonAddAlt1 className="ml-2 text-base md:text-lg" />
+              Book an appointment
             </button>
 
             {/* Mobile Menu Button */}
@@ -93,17 +142,55 @@ export default function Header() {
             id="mobile-menu"
             className="absolute bg-white top-[70px] left-0 w-full shadow-md p-5 flex flex-col items-center md:hidden z-50"
           >
-            <button className="flex items-center px-4 py-2 mb-4 text-white font-bold text-sm bg-[#33C9D2] rounded-[10px]">
-              Get Free Session <MdPersonAddAlt1 className="ml-2 text-base" />
-            </button>
 
             <Link href="/" className={`${isActiveLink('/')} py-2`} onClick={closeMenu}>Home</Link>
-            <Link href="/#we-deal-in" onClick={(e) => handleSmoothScroll(e, '/', 'we-deal-in')} className="py-2 text-[#777777]">We deal in</Link>
+            <div
+              onMouseEnter={() => setWeDealInDropdown(true)}
+              onMouseLeave={() => setWeDealInDropdown(false)}
+              className="relative group py-2 text-[#777777]"
+            >
+              <Link
+                href="/#we-offer"
+                onClick={(e) => handleSmoothScroll(e, '/', 'we-offer')}
+                className={isActiveLink('/category' || '/service')}
+              >
+                We offer
+              </Link>
+              <span className="absolute top-4">&#129171;</span>
+              {weDealInDropdown && (
+                <div className="absolute left-0 bg-white shadow-md p-2 rounded-xl z-10">
+                  <Link href="/category2" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Category</Link>
+                  <Link href="/service2" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Service</Link>
+                </div>
+              )}
+            </div>
+            <div
+                onMouseEnter={() => setMeetOurTeamDropdown(true)}
+                onMouseLeave={() => setMeetOurTeamDropdown(false)}
+                className="relative group py-2 text-[#777777]"
+              >
+                <Link href="#" className={isActiveLink('/clinical-psychologist' || '/psychiatrist')}>
+                  Meet Our Team
+                </Link>
+                <span className="absolute top-4">&#129171;</span>
+                {meetOurTeamDropdown && (
+                  <div className="absolute left-0 bg-white shadow-md p-2 rounded-xl z-10">
+                    <Link href="/clinical-psychologist" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Clinical Psychologist</Link>
+                    <Link href="/psychiatrist" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Psychiatrist</Link>
+                  </div>
+                )}
+              </div>
             <Link href="/about-us" className={`${isActiveLink('/about-us')} py-2`} onClick={closeMenu}>About us</Link>
-            <Link href="/allBlogs" className={`${isActiveLink('/allBlogs')} py-2`}>Blogs</Link>
-            <Link href="/#events-articles" onClick={(e) => handleSmoothScroll(e, '/', 'events-articles')} className="py-2 text-[#777777]">Events and Articles</Link>
+            <Link href="#allBlogs" className={`${isActiveLink('/allBlogs')} py-2`} onClick={() => openPopup('Blogs')}>Blogs</Link>
+            <Link href="/#events-articles" onClick={() => openPopup('Events and Articles Content')} className="py-2 text-[#777777]">Events and Articles</Link>
           </div>
         )}
+
+        <Popup show={popupOpen} onClose={closePopup}>
+          <h2 className="text-xl font-bold mb-4">Posts will be coming soon</h2>
+          <p>Stay Tuned!</p>
+        </Popup>
+
       </header>
     </>
   );

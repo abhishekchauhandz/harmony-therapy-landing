@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import ExpandedContent from './ExpandedContent'
+import Link from "next/link";
 
 export default function AboutUs() {
 
@@ -90,12 +90,12 @@ export default function AboutUs() {
                     <div className="flex flex-col md:flex-row justify-between gap-10" data-aos="fade-left">
                         <div className="flex flex-col gap-5 md:w-[60%]">
                             <p className="text-lg">
-                                <strong>Mrs. Kanika Jindal</strong> is a Clinical Psychologist with over <span className="text-[#FFA05D]">14 years</span> of clinical experience. She has previously worked with<strong> Qatar Airways</strong> as a Clinical Psychologist and at <span className="font-medium">Yashoda Super Specialty Hospital</span>.
+                                <strong>Mrs. Kanika Jindal</strong> is a Clinical Psychologist with over 14 years of clinical experience. She has previously worked with Qatar Airways as a Clinical Psychologist and at Yashoda Super Specialty Hospital.
                             </p>
                             <p className="text-lg">
                                 She brings a unique blend of experience working with people dealing with terminal illnesses, war, and disaster survivors.
                             </p>
-                            <p className="text-lg"> She has worked with diverse populations and supported over <span className="text-[#FFA05D]">100 nationalities</span> in their mental health journeys.</p>
+                            <p className="text-lg"> She has worked with diverse populations and supported over 100 nationalities in their mental health journeys.</p>
                             <p className="text-lg">
                                 She is passionate about making the world more inclusive, especially in terms of mental health, and is driven to combat barriers to mental health access.
                             </p>
@@ -123,7 +123,7 @@ export default function AboutUs() {
                         Harmony is an idea that started as a budding Clinical Psychologist and has now turned into reality with her persistence and belief in the power of her profession
                     </p>
                 </div>
-                <ExpandedContent />
+                <Link href='/about-us/founderDetails' className="text-[#33C9D2] underline">Get to know her more</Link>
             </div>
         </div>
     );

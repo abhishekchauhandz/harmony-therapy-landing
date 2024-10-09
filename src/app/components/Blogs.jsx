@@ -6,8 +6,8 @@ export default function Blogs() {
         <>
             <div className="md:p-10 p-2">
                 <div className="flex justify-between" data-aos="fade-up">
-                    <h1 className="font-bold md:text-5xl text-3xl">Harmony&apos;s <span className="text-[#FFA05D]">Mental Health</span> Resources</h1>
-                    <Link href="/allBlogs">
+                    <h1 className="font-bold md:text-5xl text-3xl">Harmony&apos;s <span className="text-[#FFA05D]">Mental Health</span> Resources - (Coming soon)</h1>
+                    {/* <Link href="/#allBlogs">
                         <button className="bg-[#33C9D2] md:p-3 p-1 text-base rounded-xl flex h-[50px] text-white text-center font-bold mx-3 mt-3 md:mt-0">
                             View all <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" className="ml-3">
                                 <g clipPath="url(#clip0_1554_2189)">
@@ -20,11 +20,11 @@ export default function Blogs() {
                                 </defs>
                             </svg>
                         </button>
-                    </Link>
+                    </Link> */}
                 </div>
-                <div className='md:px-3 pl-5 flex justify-center items-center' data-aos="zoom-in">
+                {/* <div className='md:px-3 pl-5 flex justify-center items-center' data-aos="zoom-in">
                     <BlogCrousal />
-                </div>
+                </div> */}
             </div>
         </>
     )
