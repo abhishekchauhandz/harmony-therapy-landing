@@ -8,7 +8,7 @@ export default function VideoSection() {
                 <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl text-center text-[montserrat]" data-aos="fade-up">
                     One <span className="text-[#33C9D2]">Video</span>, says it all
                 </h1>
-                <p className="mt-2">disclaimer – <i>video credits remains with publisher, we are using videos for educational purposes</i></p>
+                <p className="mt-2" data-aos="fade-up">disclaimer &ndash; <i>video credits remains with publisher, we are using videos for educational purposes</i></p>
                 </div>
                 <div className="w-full h-auto max-w-[1068px] lg:h-[598px]" data-aos="zoom-in">
                     <VideoPlayerWithThumbnail
