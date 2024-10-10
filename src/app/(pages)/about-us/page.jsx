@@ -7,9 +7,11 @@ export default function AboutUs() {
     return (
         <div className="w-full px-5 md:px-20">
 
-            <div className="flex flex-col md:flex-row items-center mb-16 pt-32 md:pt-32" data-aos="fade-up">
-                <div className="w-full md:w-1/2 mb-8 md:mb-0">
-                    <Image src="/hero.png" width={500} height={380} alt="About Harmony" />
+            <div className="flex flex-col md:flex-row items-center py-10 pt-32 md:pt-32" data-aos="fade-up">
+                <div className="w-full md:w-1/2 md:mb-0 md:mt-0 py-10 flex items-center justify-center">
+                    <div className="md:w-[480px] md:h-[480px] h-[350px] w-[350px] rounded-full overflow-hidden relative">
+                        <Image src="/assets/welcome.jpg" fill objectFit="cover" alt="About Harmony" />
+                    </div>
                 </div>
                 <div className="w-full md:w-1/2 py-5 bg-white px-4 rounded-3xl md:mt-10">
                     <h2 className="text-3xl font-semibold mb-4">Welcome to <span className="text-[#33C9D2]">Harmony:</span> Your trusted Mental Health Care/support</h2>
@@ -23,26 +25,30 @@ export default function AboutUs() {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row-reverse items-center md:mb-2 mb-16" data-aos="fade-left">
-                <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-end">
-                    <Image src="/hero.png" width={500} height={380} alt="our mission" />
-                </div>
-                <div className="w-full md:w-1/2 bg-white py-5 px-4 rounded-3xl">
-                    <h2 className="text-4xl font-semibold mb-4">Our <span className="text-[#33C9D2]">Mission</span></h2>
-                    <p className="text-lg">
-                        At Harmony, our mission is to provide easily accessible, authentic, reliable mental health care by a team of highly competent experts. Through evidence-based practices and holistic approaches, we strive to create a supportive environment where clients can discover their true potential and lead fulfilling, harmonious lives.
-                    </p>
-                </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row items-center mb-16" data-aos="fade-right">
-                <div className="w-full md:w-1/2 mb-8 md:mb-0">
-                    <Image src="/hero.png" width={500} height={380} alt="our vision" />
+            <div className="flex flex-col md:flex-row-reverse items-center md:mb-2 md:py-0 py-10" data-aos="fade-left">
+                <div className="w-full md:w-1/2 md:mb-0 flex justify-center items-center">
+                    <div className="md:w-[500px] md:h-[380px] h-[300px] w-[400px] rounded-3xl overflow-hidden relative">
+                        <Image src="/assets/our-vision.jpg" width={500} height={380} alt="our vision" />
+                    </div>
                 </div>
                 <div className="w-full md:w-1/2 bg-white py-5 px-4 rounded-3xl">
                     <h2 className="text-4xl font-semibold mb-4">Our <span className="text-[#33C9D2]">Vision</span></h2>
                     <p className="text-lg">
                         We envision reaching out to every member of the community and have 100% mental health literacy rates by offering affordable and easily accessible mental health services and by offering opportunities of community engagement. We are committed to foster a barrier free environment where people are confident and comfortable to support their own mental health and those around them.
+                    </p>
+                </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row items-center md:mb-12 mb-0 md:py-0 py-10" data-aos="fade-right">
+                <div className="w-full md:w-1/2 md:mb-0 flex items-center justify-center">
+                    <div className="md:w-[500px] md:h-[380px] h-[300px] w-[400px] rounded-3xl overflow-hidden relative">
+                        <Image src="/assets/our-mission.jpg" width={500} height={380} alt="our mission" />
+                    </div>
+                </div>
+                <div className="w-full md:w-1/2 bg-white py-5 px-4 rounded-3xl mb-10">
+                    <h2 className="text-4xl font-semibold mb-4">Our <span className="text-[#33C9D2]">Mission</span></h2>
+                    <p className="text-lg">
+                        At Harmony, our mission is to provide easily accessible, authentic, reliable mental health care by a team of highly competent experts. Through evidence-based practices and holistic approaches, we strive to create a supportive environment where clients can discover their true potential and lead fulfilling, harmonious lives.
                     </p>
                 </div>
             </div>
@@ -66,20 +72,24 @@ export default function AboutUs() {
                     </ul>
                 </div>
             </div>
-            <div className="mb-16 bg-white py-5 px-4 rounded-3xl" data-aos="fade-up">
-                <h2 className="text-4xl font-semibold mb-4">What We Do <span className="text-[#33C9D2]">Not</span> Offer</h2>
+            <div className="mb-16 bg-white py-5 px-4 rounded-3xl md:flex" data-aos="fade-up">
+               
                 <div className="md:px-5 px-2">
-                    <p className="text-lg">
-                        At Harmony, we do not offer emergency support, crisis intervention, or deal with life-threatening situations such as suicide. We humbly request our clients to seek immediate support from nearby health providers or emergency services in such cases.
-                    </p>
-                    <div className="flex justify-between">
+                <h2 className="text-4xl font-semibold mb-4">What We Do <span className="text-[#33C9D2]">Not</span> Offer</h2>
+                    <div className="flex flex-col gap-5">
                         <p className="text-lg mt-4">
                             <i className="font-bold">We strongly believe that the right support at the right time can prevent a life. </i>
                             We are a well-informed organization and understand our own limitations. Please ensure you reach out to appropriate support in a crisis. Your wellbeing is important.
                         </p>
-                        <div className="md:w-full mb-8 md:mb-0 md:flex justify-center hidden">
-                            <Image src="/hero.png" width={200} height={280} alt="our vision" />
-                        </div>
+                        <p className="text-lg">
+                            At Harmony, we do not offer emergency support, crisis intervention, or deal with life-threatening situations such as suicide. We humbly request our clients to seek immediate support from nearby health providers or emergency services in such cases.
+                        </p>
+
+                    </div>
+                </div>
+                <div className="md:w-full mb-8 md:mb-0 md:flex md:justify-center md:items-center">
+                    <div className="w-full h-[280px] relative mr-24">
+                        <Image src="/assets/say-no.png" fill objectFit="cover" alt="our vision" />
                     </div>
                 </div>
             </div>
@@ -104,7 +114,7 @@ export default function AboutUs() {
                             </p>
                         </div>
 
-                        <div className="relative flex-shrink-0 w-full md:w-auto md:pt-10 pt-0 md:mb-0 mb-10" data-aos="fade-right">
+                        <div className="relative flex-shrink-0 w-full md:w-auto md:pt-10 pt-5 md:mb-0 mb-10" data-aos="fade-right">
                             <Image src='/image-bg.png' width={380} height={380} alt="Background" />
                             <div className="absolute md:left-10 left-5 md:bottom-20 bottom-16 md:w-[320px] md:h-[412px] w-[300px] h-[300px]">
                                 <Image src='/modal.png' width={320} height={312} alt="Modal" />

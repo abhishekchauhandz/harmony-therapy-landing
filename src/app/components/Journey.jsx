@@ -16,11 +16,12 @@ export default function JourneyWithHarmony() {
                     </p>
                     <div className="flex items-center justify-center" data-aos="zoom-in">
                         <Image 
-                            src='/journey.png' 
+                            src='/assets/journey.gif' 
                             width={501} 
                             height={462} 
                             className="w-full h-auto max-w-[501px]"
-                            alt="Journey with Harmony" 
+                            alt="Journey with Harmony"
+                            unoptimized 
                         />
                     </div>
                 </div>

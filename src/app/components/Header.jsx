@@ -101,14 +101,14 @@ export default function Header() {
               >
                 <Link
                   href="/#we-offer"
-                  className={isActiveLink('/category' || '/service')}
+                  className={isActiveLink('/all-categories' || '/service')}
                 >
                   We offer
                 </Link>
                 <span className="absolute top-2">&#129171;</span>
                 {weDealInDropdown && (
                   <div className="absolute left-0 bg-white shadow-md p-2 rounded-xl z-10">
-                    <Link href="/category2" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Category</Link>
+                    <Link href="/all-categories" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Category</Link>
                     <Link href="/service2" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Service</Link>
                   </div>
                 )}
@@ -167,8 +167,8 @@ export default function Header() {
               <span className="absolute top-4">&#129171;</span>
               {weDealInDropdown && (
                 <div className="absolute left-0 bg-white shadow-md p-2 rounded-xl z-10">
-                  <Link href="/category2" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Category</Link>
-                  <Link href="/service2" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Service</Link>
+                  <Link href="/category2" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl px-3">Category</Link>
+                  <Link href="/service2" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl px-3">Service</Link>
                 </div>
               )}
             </div>
@@ -194,8 +194,13 @@ export default function Header() {
         )}
 
         <Popup show={popupOpen} onClose={closePopup}>
-          <h2 className="text-xl font-bold mb-4">Posts will be coming soon</h2>
-          <p>Stay Tuned!</p>
+          <div className='flex flex-col gap-5 flex items-center justify-center'>
+            <div className='w-[320px] h-[220px] relative inset-x-0'>
+              <Image src="/assets/stay-tuned.png" fill objectFit='cover' alt='Coming soon' />
+            </div>
+            <h2 className="text-xl font-bold">Posts will be coming soon</h2>
+            <p>Stay Tuned!</p>
+          </div>
         </Popup>
 
       </header>

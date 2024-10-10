@@ -6,13 +6,13 @@ import Image from "next/image";
 export default function Hero() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         setCurrentSlide((prev) => (prev + 1) % 3);
-    //     }, 5000); // Change slide every 5 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentSlide((prev) => (prev + 1) % 4);
+        }, 5000); // Change slide every 5 seconds
 
-    //     return () => clearInterval(interval); 
-    // }, []);
+        return () => clearInterval(interval); 
+    }, []);
 
     const nextSlide = () => {
         setCurrentSlide((prev) => (prev + 1) % 4);
