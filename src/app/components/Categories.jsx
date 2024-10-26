@@ -14,7 +14,7 @@ export default function CertifiedConsultant() {
     useEffect(() => {
         const fetchConsultants = async () => {
             try {
-                const response = await fetch('https://harmony-backend-z69j.onrender.com/api/get/all/category', {
+                const response = await fetch('https://backend-vqh6.onrender.com/api/get/all/category', {
                     method: "GET",
                     headers: { 'x-api-key': apiKey }
                 });

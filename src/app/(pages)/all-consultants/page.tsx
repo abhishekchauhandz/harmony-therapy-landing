@@ -16,7 +16,7 @@ const DoctorCardView = () => {
     useEffect(() => {
         const fetchDoctors = async () => {
             setLoading(true);
-            const url = 'https://harmony-backend-z69j.onrender.com/api/admin/get/staff';
+            const url = 'https://backend-vqh6.onrender.com/api/admin/get/staff';
 
             try {
                 const response = await fetch(url, {

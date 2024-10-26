@@ -20,7 +20,7 @@ const StaffDetail: React.FC = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const apiUrl = `https://harmony-backend-z69j.onrender.com/api/get/doctor/profile/${doctorId}`;
+                const apiUrl = `https://backend-vqh6.onrender.com/api/get/doctor/profile/${doctorId}`;
                 const response = await fetch(apiUrl, { headers: { 'x-api-key': apiKey } });
                 const data = await response.json();
                 console.log("doctor pro", data)
