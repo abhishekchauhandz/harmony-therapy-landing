@@ -46,7 +46,7 @@ const AllArticlePage = () => {
                         />
                     </Link>
                 ))}
-            </div>) : (<div>
+            </div>) : (<div className='flex items-center justify-center h-screen'>
                 <p>No Data Found</p>
             </div>)) : (<div className='flex items-center justify-center h-screen'>
                 <p>loading...</p>
