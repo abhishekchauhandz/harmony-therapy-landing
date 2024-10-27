@@ -57,7 +57,7 @@ export default function BlogCarousel() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("https://backend-vqh6.onrender.com/api/admin/get/top/blogs", {
+                const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}api/admin/get/top/blogs`, {
                     method: "GET", headers: { 'x-api-key': apiKey }
                 });
                 if (!response.ok) {

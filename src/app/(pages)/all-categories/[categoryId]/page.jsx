@@ -19,7 +19,7 @@ const BlogPost = () => {
         if (categoryId) {
             const fetchBlog = async () => {
                 try {
-                    const response = await fetch(`https://backend-vqh6.onrender.com/api/get/category/${categoryId}`, {
+                    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}api/get/category/${categoryId}`, {
                         method: "GET",
                         headers: { 'x-api-key': apiKey }
                     });

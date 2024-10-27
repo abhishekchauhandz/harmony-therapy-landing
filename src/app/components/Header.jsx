@@ -131,12 +131,12 @@ export default function Header() {
               </div> */}
               <Link href="/about-us" className={isActiveLink('/about-us')}>About us</Link>
               <Link href="/#allBlogs" className={`${isActiveLink('/allBlogs')} `} onClick={() => openPopup('Blogs')}>Blogs</Link>
-              <Link href="/#events-articles" onClick={() => openPopup('Events and Articles Content')} className="text-[#777777]">Events and Articles</Link>
+              <Link href="/allArticles" className={isActiveLink('/allArticles')}>Events and Articles</Link>
             </div>
 
             {/* Call-to-Action Button */}
             <Link
-              href="https://wa.me/919990316388?text=I'd%20like%20to%20book%20an%20appointment"
+              href="https://wa.me/917303366671?text=I'd%20like%20to%20book%20an%20appointment"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -196,7 +196,7 @@ export default function Header() {
             </div>
             <Link href="/about-us" className={`${isActiveLink('/about-us')} py-2`} onClick={closeMenu}>About us</Link>
             <Link href="#allBlogs" className={`${isActiveLink('/allBlogs')} py-2`} onClick={() => openPopup('Blogs')}>Blogs</Link>
-            <Link href="/#events-articles" onClick={() => openPopup('Events and Articles Content')} className="py-2 text-[#777777]">Events and Articles</Link>
+            <Link href="/allArticles" className={`${isActiveLink('/allArticles')} py-2`} onClick={closeMenu}>Events and Articles</Link>
           </div>
         )}
 

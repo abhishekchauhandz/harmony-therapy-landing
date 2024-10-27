@@ -54,7 +54,7 @@ export default function Footer() {
                                 <ul className="mt-5 text-sm">
                                     <li><Link href="allBlogs">Blogs</Link></li>
                                     <li><Link href="/all-categories">Categories</Link></li>
-                                    <li><Link href="#">All Articles</Link></li>
+                                    <li><Link href="/allArticles">All Articles</Link></li>
                                     <li><Link href="/about-us">About us</Link></li>
                                 </ul>
                             </div>

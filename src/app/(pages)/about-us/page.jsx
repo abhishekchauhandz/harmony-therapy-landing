@@ -8,8 +8,8 @@ export default function AboutUs() {
         <div className="w-full px-5 md:px-20">
 
             <div className="flex flex-col md:flex-row items-center py-10 pt-32 md:pt-32" data-aos="fade-up">
-                <div className="w-full md:w-1/2 md:mb-0 md:mt-0 py-10 flex items-center justify-center">
-                    <div className="md:w-[480px] md:h-[480px] h-[350px] w-[350px] rounded-full overflow-hidden relative">
+            <div className="w-full md:w-1/2 md:mb-0 md:mt-0 py-10 flex items-center justify-center">
+                    <div className="rounded-full overflow-hidden relative w-full max-w-md aspect-square">
                         <Image src="/assets/welcome.jpg" fill objectFit="cover" alt="About Harmony" />
                     </div>
                 </div>

@@ -30,7 +30,7 @@ export default function Hero() {
                             <span className="text-3xl md:text-5xl font-bold text-[#33C9D2]">We provide
                             </span>
                             <div>
-                                {/* <span className="text-3xl md:text-5xl font-bold text-[#222222]">in your </span> */}
+                                {/* <span className="text-3xl md:text-5xl font-bold text-[#FFA05D]">in your </span> */}
                                 <span className="text-3xl md:text-5xl font-bold text-[#FFA05D]">compassionate care</span>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ export default function Hero() {
                         <div className="w-full md:w-[469px]">
                             <span className="text-3xl md:text-5xl font-bold text-[#33C9D2]">Harmony-                            </span>
                             <div>
-                                {/* <span className="text-3xl md:text-5xl font-bold text-[#222222]">in your </span> */}
+                                {/* <span className="text-3xl md:text-5xl font-bold text-[#FFA05D]">in your </span> */}
                                 <span className="text-3xl md:text-5xl font-bold text-[#FFA05D]">Your safe space
                                 </span>
                             </div>
@@ -90,7 +90,7 @@ export default function Hero() {
                             <span className="text-3xl md:text-5xl font-bold text-[#33C9D2]">Your wellbeing is
                             </span>
                             <div>
-                                <span className="text-3xl md:text-5xl font-bold text-[#222222]">our priority
+                                <span className="text-3xl md:text-5xl font-bold text-[#FFA05D]">our priority
                                 </span>
                             </div>
                         </div>
@@ -121,7 +121,7 @@ export default function Hero() {
                                 Inner peace and
                             </span>
                             <div>
-                                <span className="text-3xl md:text-5xl font-bold text-[#222222]">good balance
+                                <span className="text-3xl md:text-5xl font-bold text-[#FFA05D]">good balance
                                 </span>
 
                             </div>

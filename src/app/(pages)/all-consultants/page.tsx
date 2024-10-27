@@ -16,7 +16,7 @@ const DoctorCardView = () => {
     useEffect(() => {
         const fetchDoctors = async () => {
             setLoading(true);
-            const url = 'https://backend-vqh6.onrender.com/api/admin/get/staff';
+            const url = `${process.env.NEXT_PUBLIC_BASE_URL}api/admin/get/staff`;
 
             try {
                 const response = await fetch(url, {
@@ -51,18 +51,22 @@ const DoctorCardView = () => {
     return (
         <div className="flex flex-col gap-5 p-5 w-full pt-20 md:px-10">
             {doctorData.length === 0 ? (
-                <div className="text-center text-xl text-gray-600 h-[100vh] text-[#33C9D2]">
+                <div className="text-center text-xl text-gray-600 h-[100vh] text-[#33C9D2] flex items-center justify-center">
                     No data found
                 </div>
             ) : (
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-20">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
                     {doctorData.map((doctor) => {
                         const detailPath = `/all-consultants/${doctor.id}`;
                         return (
                             <div key={doctor.id} className="flex justify-center">
                                 <Link href={detailPath} passHref>
-                                    <div className="cursor-pointer">
-                                        <DoctorCard name={doctor.doctorName || doctor.username} role={doctor.role} imageUrl="/altImage.png" />
+                                    <div className="cursor-pointer w-full">
+                                        <DoctorCard
+                                            name={doctor.doctorName || doctor.username}
+                                            role={doctor.role}
+                                            imageUrl="/altImage.png"
+                                        />
                                     </div>
                                 </Link>
                             </div>

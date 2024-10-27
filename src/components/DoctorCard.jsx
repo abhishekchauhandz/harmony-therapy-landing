@@ -7,8 +7,8 @@ const DoctorCard = ({ name = "Unknown", role, imageUrl }) => {
     : name || "Unknown";
 
   return (
-    <div className="rounded-3xl p-3 m-2 w-[160px] md:w-[300px] h-[200px] md:h-[320px] shadow-md hover:shadow-lg transition-shadow cursor-pointer flex flex-col justify-between bg-white">
-      <div className="relative w-full h-[80%] rounded-3xl">
+    <div className="blogCard rounded-3xl m-2 w-full max-w-full h-auto transition-transform duration-200 ease-in-out shadow-md hover:shadow-lg cursor-pointer flex flex-col justify-between bg-white">
+      <div className="relative w-full h-[80%] rounded-3xl overflow-hidden">
         <Image
           src={imageUrl}
           alt={name}
