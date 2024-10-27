@@ -12,7 +12,7 @@ export default function Service() {
                     We are committed to  <span className="text-[#FFA05D]">Your Wellbeing</span>
                 </h1>
                 <div className="flex items-center justify-center">
-                    <div className="md:flex flex-col justify-between text-left bg-white p-5 rounded-3xl w-full md:w-[60%] h-auto" data-aos="fade-right">
+                    <div className="flex md:flex-row flex-col justify-between text-left bg-white p-5 rounded-3xl w-full md:w-[60%] h-auto" data-aos="fade-right">
                         <div className="md:w-1/2 w-full flex flex-col gap-2">
                             <h2 className="font-bold text-xl md:text-2xl mt-4">Trusted and Certified Consultants</h2>
                             <p className="text-base md:text-xl">
