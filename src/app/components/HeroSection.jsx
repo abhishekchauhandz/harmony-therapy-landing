@@ -11,7 +11,7 @@ export default function Hero() {
             setCurrentSlide((prev) => (prev + 1) % 4);
         }, 5000); // Change slide every 5 seconds
 
-        return () => clearInterval(interval); 
+        return () => clearInterval(interval);
     }, []);
 
     const nextSlide = () => {
@@ -21,67 +21,65 @@ export default function Hero() {
 
     return (
         <div className="flex justify-center md:flex md:py-20 md:mt-2">
-            <div className="flex flex-col md:flex-row items-center justify-between w-full mt-48 md:mt-36 space-y-8 md:space-y-0 md:space-x-8 relative">
+            <div className="flex flex-col md:flex-row items-center justify-between w-full mt-48 md:mt-32 space-y-0 md:space-y-0 md:space-x-8 relative">
 
 
                 {currentSlide === 0 && (
                     <div className="text-center md:text-left md:py-0 py-5 md:pl-12" data-aos="fade-right">
                         <div className="w-full md:w-[469px]">
-                            <span className="text-3xl md:text-5xl font-bold text-[#33C9D2]">Your Wellbeing</span>
+                            <span className="text-3xl md:text-5xl font-bold text-[#33C9D2]">We provide
+                            </span>
                             <div>
                                 {/* <span className="text-3xl md:text-5xl font-bold text-[#222222]">in your </span> */}
-                                <span className="text-3xl md:text-5xl font-bold text-[#FFA05D]">Our priority</span>
+                                <span className="text-3xl md:text-5xl font-bold text-[#FFA05D]">compassionate care</span>
                             </div>
                         </div>
-                        <div className="w-full md:w-[420px] h-auto mt-5 text-lg md:text-xl text-[#777777]">
+                        {/* <div className="w-full md:w-[420px] h-auto mt-5 text-lg md:text-xl text-[#777777]">
                             <p>Your Mental Health Good Balance</p>
                             <p>Decision which Makes your Harmony flow</p>
                             <p>in a Positive Direction</p>
-                        </div>
+                        </div> */}
                     </div>
                 )}
 
                 {currentSlide === 0 && (
-                    <div className="w-full md:w-[640px] relative flex justify-center items-center md:py-0 py-10" data-aos="fade-left">
-                        <div className="w-[608px] h-[336px] bg-white rounded-3xl relative flex items-center justify-center">
-                            <Image
-                                src="/hero.png"
-                                width={444}
-                                height={433}
-                                className="object-contain md:absolute md:bottom-0 absolute bottom-0"
-                                alt="Hero Image"
-                            />
-                        </div>
+                    <div className="w-full md:w-[640px] w-full h-[400px] relative flex justify-center items-center" data-aos="fade-left">
+                        <Image
+                            src="/landingImages/banner1.png"
+                            fill
+                            objectFit="contain"
+                            className="object-contain md:absolute md:bottom-0 absolute bottom-0"
+                            alt="Hero Image"
+                        />
                     </div>
                 )}
 
                 {currentSlide === 1 && (
                     <div className="text-center md:text-left md:py-0 py-5 md:pl-12" data-aos="fade-right">
                         <div className="w-full md:w-[469px]">
-                            <span className="text-3xl md:text-5xl font-bold text-[#33C9D2]">We provide</span>
+                            <span className="text-3xl md:text-5xl font-bold text-[#33C9D2]">Harmony-                            </span>
                             <div>
                                 {/* <span className="text-3xl md:text-5xl font-bold text-[#222222]">in your </span> */}
-                                <span className="text-3xl md:text-5xl font-bold text-[#FFA05D]">Confidential care</span>
+                                <span className="text-3xl md:text-5xl font-bold text-[#FFA05D]">Your safe space
+                                </span>
                             </div>
                         </div>
-                        <div className="w-full md:w-[420px] h-auto mt-5 text-lg md:text-xl text-[#777777]">
+                        {/* <div className="w-full md:w-[420px] h-auto mt-5 text-lg md:text-xl text-[#777777]">
                             <p>Your Mental Health Good Balance</p>
                             <p>Decision which Makes your Harmony flow</p>
                             <p>in a Positive Direction</p>
-                        </div>
+                        </div> */}
                     </div>
                 )}
                 {currentSlide === 1 && (
-                    <div className="w-full md:w-[640px] relative flex justify-center items-center md:py-0 py-10" data-aos="fade-left">
-                        <div className="w-[608px] h-[336px] bg-white rounded-3xl relative flex items-center justify-center">
-                            <Image
-                                src="/altImage.png"
-                                width={444}
-                                height={433}
-                                className="object-contain md:absolute md:bottom-0 absolute bottom-0"
-                                alt="Hero Image"
-                            />
-                        </div>
+                    <div className="w-full md:w-[640px] w-[608px] h-[400px] relative flex justify-center items-center md:py-0 py-10" data-aos="fade-left">
+                        <Image
+                            src="/landingImages/banner2.png"
+                            fill
+                            objectFit="contain"
+                            className="object-contain md:absolute md:bottom-0 absolute bottom-0"
+                            alt="Hero Image"
+                        />
                     </div>
                 )}
 
@@ -89,62 +87,62 @@ export default function Hero() {
                 {currentSlide === 2 && (
                     <div className="text-center md:text-left md:py-0 py-5 md:pl-12" data-aos="fade-right">
                         <div className="w-full md:w-[469px]">
-                            <span className="text-3xl md:text-5xl font-bold text-[#33C9D2]">Your pathway</span>
+                            <span className="text-3xl md:text-5xl font-bold text-[#33C9D2]">Your wellbeing is
+                            </span>
                             <div>
-                                <span className="text-3xl md:text-5xl font-bold text-[#222222]">to inner peace </span>
-                                <span className="text-3xl md:text-5xl font-bold text-[#FFA05D]">and good balance</span>
+                                <span className="text-3xl md:text-5xl font-bold text-[#222222]">our priority
+                                </span>
                             </div>
                         </div>
-                        <div className="w-full md:w-[420px] h-auto mt-5 text-lg md:text-xl text-[#777777]">
+                        {/* <div className="w-full md:w-[420px] h-auto mt-5 text-lg md:text-xl text-[#777777]">
                             <p>Your Mental Health Good Balance</p>
                             <p>Decision which Makes your Harmony flow</p>
                             <p>in a Positive Direction</p>
-                        </div>
+                        </div> */}
                     </div>
                 )}
 
                 {currentSlide === 2 && (
-                    <div className="w-full md:w-[640px] relative flex justify-center items-center md:py-0 py-10" data-aos="fade-left">
-                        <div className="w-[608px] h-[336px] bg-white rounded-3xl relative flex items-center justify-center">
-                            <Image
-                                src="/videothumbnail.png"
-                                width={444}
-                                height={433}
-                                className="object-contain md:absolute md:bottom-0 absolute bottom-0"
-                                alt="Hero Image"
-                            />
-                        </div>
+                    <div className="w-full md:w-[640px] w-[608px] h-[400px] relative flex justify-center items-center md:py-0 py-10" data-aos="fade-left">
+                        <Image
+                            src="/landingImages/banner3.png"
+                            fill
+                            objectFit="contain"
+                            className="object-contain md:absolute md:bottom-0 absolute bottom-0"
+                            alt="Hero Image"
+                        />
                     </div>
                 )}
 
                 {currentSlide === 3 && (
                     <div className="text-center md:text-left md:py-0 py-5 md:pl-12" data-aos="fade-right">
                         <div className="w-full md:w-[469px]">
-                            <span className="text-3xl md:text-5xl font-bold text-[#33C9D2]">Harmony- where</span>
+                            <span className="text-3xl md:text-5xl font-bold text-[#33C9D2]">Your pathway to
+                                Inner peace and
+                            </span>
                             <div>
-                                <span className="text-3xl md:text-5xl font-bold text-[#222222]">every step brings you closer to a </span>
-                                <span className="text-3xl md:text-5xl font-bold text-[#FFA05D]">harmonious state of mind</span>
+                                <span className="text-3xl md:text-5xl font-bold text-[#222222]">good balance
+                                </span>
+
                             </div>
                         </div>
-                        <div className="w-full md:w-[420px] h-auto mt-5 text-lg md:text-xl text-[#777777]">
+                        {/* <div className="w-full md:w-[420px] h-auto mt-5 text-lg md:text-xl text-[#777777]">
                             <p>Your Mental Health Good Balance</p>
                             <p>Decision which Makes your Harmony flow</p>
                             <p>in a Positive Direction</p>
-                        </div>
+                        </div> */}
                     </div>
                 )}
 
                 {currentSlide === 3 && (
-                    <div className="w-full md:w-[640px] relative flex justify-center items-center md:py-0 py-10" data-aos="fade-left">
-                        <div className="w-[608px] h-[336px] bg-white rounded-3xl relative flex items-center justify-center">
-                            <Image
-                                src="/videothumbnail.png"
-                                width={444}
-                                height={433}
-                                className="object-contain md:absolute md:bottom-0 absolute bottom-0"
-                                alt="Hero Image"
-                            />
-                        </div>
+                    <div className="w-full md:w-[640px] w-[608px] h-[400px] relative flex justify-center items-center md:py-0 py-10" data-aos="fade-left">
+                        <Image
+                            src="/landingImages/banner4.png"
+                            fill
+                            objectFit="contain"
+                            className="object-contain md:absolute md:bottom-0 absolute bottom-0"
+                            alt="Hero Image"
+                        />
                     </div>
                 )}
 

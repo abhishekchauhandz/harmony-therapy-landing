@@ -113,7 +113,7 @@ export default function Header() {
                   </div>
                 )}
               </div>
-              <div
+              {/* <div
                 onMouseEnter={() => setMeetOurTeamDropdown(true)}
                 onMouseLeave={() => setMeetOurTeamDropdown(false)}
                 className="relative group"
@@ -128,16 +128,23 @@ export default function Header() {
                     <Link href="/psychiatrist" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Psychiatrist</Link>
                   </div>
                 )}
-              </div>
+              </div> */}
               <Link href="/about-us" className={isActiveLink('/about-us')}>About us</Link>
               <Link href="/#allBlogs" className={`${isActiveLink('/allBlogs')} `} onClick={() => openPopup('Blogs')}>Blogs</Link>
               <Link href="/#events-articles" onClick={() => openPopup('Events and Articles Content')} className="text-[#777777]">Events and Articles</Link>
             </div>
 
             {/* Call-to-Action Button */}
-            <button className="flex items-center px-4 py-2 text-white font-bold text-sm md:text-base bg-[#33C9D2] rounded-[10px]">
-              Book an appointment
-            </button>
+            <Link
+              href="https://wa.me/919990316388?text=I'd%20like%20to%20book%20an%20appointment"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="flex items-center px-4 py-2 text-white font-bold text-sm md:text-base bg-[#33C9D2] rounded-[10px]">
+                Book an appointment
+              </button>
+            </Link>
+
 
             {/* Mobile Menu Button */}
             <div className="md:hidden mr-5" onClick={toggleMenu}>

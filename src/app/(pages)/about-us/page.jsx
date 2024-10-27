@@ -72,10 +72,10 @@ export default function AboutUs() {
                     </ul>
                 </div>
             </div>
-            <div className="mb-16 bg-white py-5 px-4 rounded-3xl md:flex" data-aos="fade-up">
-               
+            <div className="mb-16 bg-white py-0 px-4 rounded-3xl md:flex" data-aos="fade-up">
+
                 <div className="md:px-5 px-2">
-                <h2 className="text-4xl font-semibold mb-4">What We Do <span className="text-[#33C9D2]">Not</span> Offer</h2>
+                    <h2 className="text-4xl font-semibold mt-5">What We Do <span className="text-[#33C9D2]">Not</span> Offer</h2>
                     <div className="flex flex-col gap-5">
                         <p className="text-lg mt-4">
                             <i className="font-bold">We strongly believe that the right support at the right time can prevent a life. </i>
@@ -87,7 +87,7 @@ export default function AboutUs() {
 
                     </div>
                 </div>
-                <div className="md:w-full mb-8 md:mb-0 md:flex md:justify-center md:items-center">
+                <div className="md:w-full md:flex md:justify-center md:items-center">
                     <div className="w-full h-[280px] relative mr-24">
                         <Image src="/assets/say-no.png" fill objectFit="cover" alt="our vision" />
                     </div>
@@ -114,10 +114,10 @@ export default function AboutUs() {
                             </p>
                         </div>
 
-                        <div className="relative flex-shrink-0 w-full md:w-auto md:pt-10 pt-5 md:mb-0 mb-10" data-aos="fade-right">
-                            <Image src='/image-bg.png' width={380} height={380} alt="Background" />
-                            <div className="absolute md:left-10 left-5 md:bottom-20 bottom-16 md:w-[320px] md:h-[412px] w-[300px] h-[300px]">
-                                <Image src='/modal.png' width={320} height={312} alt="Modal" />
+                        <div className="relative flex-shrink-0 w-full md:w-auto md:pt-0 pt-5 md:mb-0 mb-10" data-aos="fade-right">
+
+                            <div className="md:w-[320px] md:h-[412px] w-[300px] h-[300px]">
+                                <Image src='/founder.png' fill objectFit="cover" alt="Background" className="rounded-2xl"/>
                             </div>
                         </div>
                     </div>
