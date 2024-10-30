@@ -187,16 +187,16 @@ body {
 
 @media (max-width: 768px) {
   .head-ings{
-    margin-top: 30px;
+    margin-top: 0px;
   }
   .head-ings > h1 {
-    font-size: 24px;
-  }
-  .head-ings > h2 {
     font-size: 20px;
   }
-  .cost-div > p {
+  .head-ings > h2 {
     font-size: 16px;
+  }
+  .cost-div > p {
+    font-size: 12px;
     padding-left: 150px;
     border-radius: 50px;
   }
