@@ -12,7 +12,7 @@ export default function CostSection() {
                             <h2 className="font-bold text-xl md:text-4xl text-[#FFA05D] text-right">bringing pure harmony.</h2>
                         </div>
 
-                        <p className="font-medium text-base md:text-xl mt-4 md:mb-16 text-white md:text-right pl-40 md:pl-6 text-right">Install the app for free and unlock premium resources at no cost. Connect with your therapist right here.
+                        <p className="font-medium text-base md:text-xl mt-4 md:mb-16 text-white md:text-right pl-40 md:pl-16 text-right">Install the app for free and unlock premium resources at no cost. Connect with your therapist right here.
                         </p>
                         {/* <div className="flex gap-5 md:pb-5 md:mt-0 mt-10">
                             <Link href="https://play.google.com/">
