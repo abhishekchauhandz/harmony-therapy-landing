@@ -152,16 +152,16 @@ body {
   .cost {
     padding: 0
   }
-  .head-ings{
+  .cost > .cost-div > .head-ings{
     margin-top: 36px;
   }
-  .head-ings > h1 {
+  .cost > .cost-div > .head-ings > h1 {
     font-size: 30px;
   }
-  .head-ings > h2 {
+  .cost >.cost-div > .head-ings > h2 {
     font-size: 24px;
   }
-  .cost-div > p {
+  .cost > .cost-div > p {
     font-size: 16px;
   }
 }
@@ -170,24 +170,41 @@ body {
   .cost {
     padding: 0
   }
-  .head-ings{
+  .cost > .cost-div > .head-ings {
     margin-top: 36px;
     justify-content: flex-end;
   }
-  .head-ings > h1 {
+  .cost > .cost-div > .head-ings  > h1 {
     font-size: 24px;
   }
-  .head-ings > h2 {
+  .cost >.cost-div > .head-ings  > h2 {
     font-size: 20px;
   }
-  .cost-div > p {
+  .cost > .cost-div  > p {
     font-size: 16px;
+    padding-left: 150px;
   }
 }
 
 @media (max-width: 768px) {
-  .head-ings{
+  .cost > .cost-div > .head-ings{
     margin-top: 0px;
+  }
+  .cost > .cost-div > .head-ings > h1 {
+    font-size: 20px;
+  }
+  .cost >.cost-div > .head-ings > h2 {
+    font-size: 16px;
+  }
+  .cost > .cost-div > p {
+    font-size: 12px;
+    padding-left: 150px;
+  }
+}
+
+@media (max-width: 560px) {
+  .head-ings{
+    margin-top: 30px;
   }
   .head-ings > h1 {
     font-size: 20px;
@@ -196,9 +213,8 @@ body {
     font-size: 16px;
   }
   .cost-div > p {
-    font-size: 12px;
-    padding-left: 150px;
-    border-radius: 50px;
+    font-size: 10px;
+    padding-left: 200px;
   }
 }
 
@@ -215,7 +231,6 @@ body {
   .cost-div > p {
     font-size: 10px;
     padding-left: 150px;
-    border-radius: 50px;
   }
 }
 
