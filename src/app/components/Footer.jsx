@@ -72,7 +72,7 @@ export default function Footer() {
                         </div> */}
 
                         <div className="flex flex-col items-center md:items-start ml-0 md:mt-0 mt-5">
-                            <h1 className="text-lg md:text-xl font-bold">Available Soon</h1>
+                            <h1 className="text-lg md:text-xl font-bold">Coming Soon</h1>
                             <div className="flex gap-5">
                                 <div className="mt-5">
                                     <Link href="https://play.google.com/">

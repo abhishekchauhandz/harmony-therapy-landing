@@ -4,7 +4,7 @@ export default function JourneyWithHarmony() {
     return (
         <>
             <div className="flex justify-center py-10 px-4">
-                <div className="w-full h-auto bg-white rounded-[25px] text-center p-5 flex flex-col gap-5">
+                <div className="w-full h-auto bg-white rounded-[25px] text-center p-5 flex flex-col gap-7">
                     <h1 className="text-3xl md:text-5xl font-bold font-montserrat">
                         Start your journey with  <span className="text-[#33C9D2]">Harmony</span>
                     </h1>
@@ -15,9 +15,8 @@ export default function JourneyWithHarmony() {
                     <div className="flex items-center justify-center" data-aos="zoom-in">
                         <Image
                             src='/journey.gif'
-                            width={501}
-                            height={462}
-                            className="w-full h-auto max-w-[501px]"
+                            width={651}
+                            height={500}
                             alt="Journey with Harmony"
                             unoptimized
                         />

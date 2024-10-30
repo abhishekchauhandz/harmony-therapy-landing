@@ -11,19 +11,14 @@ export default function Service() {
                 <h1 className="font-bold text-4xl md:text-5xl">
                 Dedicated to nurturing   <span className="text-[#FFA05D]">your wellbeing</span>
                 </h1>
-                <div className="flex items-center justify-center">
-                    <div className="flex md:flex-row flex-col items-center text-left p-5 rounded-3xl w-full md:w-[60%] h-[380px] bg-[url('/trustImage.png')] bg-cover bg-center bg-no-repeat" data-aos="fade-right">
+                <div className="flex items-center justify-center md:w-[60%] w-full h-[60vh] rounded-3xl bg-[url('/trustImage.png')] bg-cover bg-center bg-no-repeat">
+                    <div className="flex md:flex-row flex-col items-center text-left p-5 " data-aos="fade-right">
                         <div className="md:w-1/2 w-full flex flex-col gap-2">
-                            <h2 className="font-bold text-xl md:text-2xl mt-4">Your trusted consultants</h2>
-                            <p className="text-base md:text-xl">
+                            <h2 className="font-bold text-xl md:text-2xl md:px-4 text-white">Your trusted consultants</h2>
+                            <p className="text-base md:text-xl md:px-4 text-white">
                             Certified and compassionate, our trusted consultants provide expert mental health support to help you navigate challenges with integrity and care
                             </p>
                         </div>
-                        {/* <div className="md:w-1/2 w-full flex justify-center items-center md:mt-0 mt-6">
-                            <div className="flex justify-center rounded-full w-[220px] h-[220px] relative">
-                                <Image src='/psycho.jpg' fill objectFit="cover" className="rounded-full" alt="psychaterist"/>
-                            </div>
-                        </div> */}
 
                     </div>
                 </div>
