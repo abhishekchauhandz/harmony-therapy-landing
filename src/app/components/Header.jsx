@@ -84,7 +84,7 @@ export default function Header() {
     <>
       <header className="flex justify-center relative">
         <nav className="navbar flex items-center justify-between bg-white absolute top-10 w-full">
-          <div className="flex items-center justify-between w-full px-5">
+          <div className="flex items-center justify-evenly w-full px-5">
             <div className="w-[25%] max-w-[140px] h-auto">
               <Link href="/">
                 <Image src="/logo.png" width={140} height={60} alt="Logo" />
@@ -92,7 +92,7 @@ export default function Header() {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex text-[#777777] gap-10 text-base md:text-lg">
+            {/* <div className="hidden md:flex text-[#777777] gap-10 text-base md:text-lg">
               <Link href="/" className={isActiveLink('/')}>Home</Link>
               <div
                 onMouseEnter={() => setWeDealInDropdown(true)}
@@ -113,7 +113,7 @@ export default function Header() {
                   </div>
                 )}
               </div>
-              {/* <div
+              <div
                 onMouseEnter={() => setMeetOurTeamDropdown(true)}
                 onMouseLeave={() => setMeetOurTeamDropdown(false)}
                 className="relative group"
@@ -128,11 +128,11 @@ export default function Header() {
                     <Link href="/psychiatrist" className="block py-1 hover:bg-[#33C9D2] hover:text-white rounded-xl py-2 px-3">Psychiatrist</Link>
                   </div>
                 )}
-              </div> */}
+              </div>
               <Link href="/about-us" className={isActiveLink('/about-us')}>About us</Link>
               <Link href="/#allBlogs" className={`${isActiveLink('/allBlogs')} `} onClick={() => openPopup('Blogs')}>Blogs</Link>
               <Link href="/allArticles" className={isActiveLink('/allArticles')}>Events and Articles</Link>
-            </div>
+            </div> */}
 
             {/* Call-to-Action Button */}
             <Link
@@ -147,9 +147,9 @@ export default function Header() {
 
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden mr-5" onClick={toggleMenu}>
+            {/* <div className="md:hidden mr-5" onClick={toggleMenu}>
               {menuOpen ? <AiOutlineClose size={24} /> : <AiOutlineMenu size={24} />}
-            </div>
+            </div> */}
           </div>
         </nav>
 

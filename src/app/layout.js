@@ -30,36 +30,6 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
 
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Harmony Therapy",
-            "url": "https://yourwebsite.com", // Replace with your actual URL
-            "logo": "https://yourwebsite.com/logo.png", // Replace with your logo URL
-            "sameAs": [
-              "https://www.facebook.com/yourprofile", // Replace with your social media links
-              "https://www.twitter.com/yourprofile",
-              "https://www.linkedin.com/in/yourprofile"
-            ],
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+1-800-555-0123", // Replace with your phone number
-              "contactType": "Customer Service",
-              "areaServed": "US",
-              "availableLanguage": "English"
-            },
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "123 Harmony St", // Replace with your street address
-              "addressLocality": "Your City",
-              "addressRegion": "Your State",
-              "postalCode": "12345",
-              "addressCountry": "US"
-            },
-            "description": "Your trusted Mental Health Care/support",
-          })}
-        </script>
       </head>
       <body
         className={`${poppins.variable} ${montserrat.variable}`}

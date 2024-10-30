@@ -19,10 +19,10 @@ export default function Home() {
           <Hero />
           <JourneyWithHarmony />
           <Service />
-          <CertifiedConsultant />
+          {/* <CertifiedConsultant /> */}
           <Features />
           <VideoSection />
-          <Blogs />
+          {/* <Blogs /> */}
           <FAQ />
           <CostSection />
         </AOSWrapper>
