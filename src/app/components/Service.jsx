@@ -14,8 +14,8 @@ export default function Service() {
                 <div className="flex items-center justify-center md:w-[60%] w-full h-[60vh] rounded-3xl bg-[url('/trustImage.png')] bg-cover bg-center bg-no-repeat">
                     <div className="flex md:flex-row flex-col items-center text-left p-5 " data-aos="fade-right">
                         <div className="md:w-1/2 w-full flex flex-col gap-2">
-                            <h2 className="font-bold text-xl md:text-2xl md:px-4 text-white">Your trusted consultants</h2>
-                            <p className="text-base md:text-xl md:px-4 text-white">
+                            <h2 className="font-bold text-xl md:text-2xl md:px-4 text-[#FAF9F6]">Your trusted consultants</h2>
+                            <p className="text-base md:text-xl md:px-4 text-[#FAF9F6]">
                             Certified and compassionate, our trusted consultants provide expert mental health support to help you navigate challenges with integrity and care
                             </p>
                         </div>
