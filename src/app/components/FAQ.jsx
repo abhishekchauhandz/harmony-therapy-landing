@@ -22,7 +22,7 @@ const FAQ = () => {
         {
             question: "Can I reschedule my session?",
             answer:
-                "Yes, you can reschedule a session 48 hours prior to the booked slot. You can simply go to (information on steps to reschedule to be filled by Shubham’s team).",
+                "Yes, you can reschedule a session 48 hours prior to the booked slot. You can simply go to your upcoming sessions and there, you can change the session timing.",
         },
         {
             question: "What if I missed my session?",
