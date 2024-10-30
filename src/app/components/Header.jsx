@@ -84,8 +84,8 @@ export default function Header() {
     <>
       <header className="flex justify-center relative">
         <nav className="navbar flex items-center justify-between bg-white absolute top-10 w-full">
-          <div className="flex items-center justify-evenly w-full px-5">
-            <div className="w-[25%] max-w-[140px] h-auto">
+          <div className="flex items-center justify-between w-full px-5">
+            <div className="w-[25%] max-w-[140px] h-auto md:ml-20">
               <Link href="/">
                 <Image src="/logo.png" width={140} height={60} alt="Logo" />
               </Link>
@@ -139,6 +139,7 @@ export default function Header() {
               href="https://wa.me/917303366671?text=I'd%20like%20to%20book%20an%20appointment"
               target="_blank"
               rel="noopener noreferrer"
+              className='md:mr-10'
             >
               <button className="flex items-center px-4 py-2 text-white font-bold text-sm md:text-base bg-[#33C9D2] rounded-[10px]">
                 Book an appointment
